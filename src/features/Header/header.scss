@@ -12,15 +12,14 @@ $secondary: #39145d;
     top:0;
     left:0;
     border:1px solid red;
+    background:#fff;
 
     button{
         border:none;
         font-size:1rem;
     }
 
-    &__item{
-       
-    }
+    
     &__logo{
         max-width: 200px;
         max-height: 40px;

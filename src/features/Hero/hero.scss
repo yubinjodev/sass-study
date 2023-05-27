@@ -1,12 +1,22 @@
-.hero{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    min-height: 100vh;
-    height:100%;
-    padding:80px;
+$secondary: #39145d;
 
-    &__title{
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 100vh;
+  height: 100%;
+  padding: 80px;
 
-    }
+  &__title {
+    font-size: 3rem;
+    background: radial-gradient(at top right,orange,hotpink,blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__subtitle{
+    color:$secondary;
+    font-size: 1.5rem;
+  }
 }

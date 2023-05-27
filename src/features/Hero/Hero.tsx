@@ -3,7 +3,7 @@ import "./hero.scss";
 export default function Hero() {
   return (
     <section className="hero">
-      <h1 className="hero__title">Returns picked up from your doorstep</h1>
+        <h1 className="hero__title">Returns picked up from your doorstep</h1>
 
       <div className="hero__subtitle">
         <h3>No more packaging</h3>
@@ -12,7 +12,7 @@ export default function Hero() {
       </div>
 
       <div className="hero__zipcode">
-        <input placeholder="Enter your zip code"/>
+        <input placeholder="Enter your zip code" />
       </div>
 
       <div className="hero__download">
