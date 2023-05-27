@@ -6,12 +6,13 @@ $secondary: #39145d;
     justify-content: space-between;
     align-items: center;    
     flex-direction: row;
-    padding:40px;
+    padding: 24px 48px;
+    max-width: 100vw;
     width:100%;
     position:fixed;
     top:0;
     left:0;
-    border:1px solid red;
+    // border:1px solid red;
     background:#fff;
 
     button{
