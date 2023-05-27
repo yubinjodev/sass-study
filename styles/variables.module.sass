@@ -1,0 +1,12 @@
+@import 'mixins'
+
+$color-primary: blue
+
+.title
+    color: $color-primary
+    a
+        background-color: green
+
+@include mobile()
+    .title
+        background: grey

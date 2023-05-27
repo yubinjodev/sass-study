@@ -1,5 +1,10 @@
-export default function Home(){
-  return(
-    <>hello</>
-  )
+import Header from "@/features/Header/";
+import variables from "../../styles/variables.module.sass";
+
+export default function Home() {
+  return (
+    <>
+     <Header/>
+    </>
+  );
 }
