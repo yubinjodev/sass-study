@@ -19,3 +19,23 @@
     margin-right: 8px;
     }
 }
+
+.downloadbutton {
+  height: 60px;
+  width: 200px;
+  background: #000;
+  color: #fff;
+  display:flex;
+  flex-direction: row;
+  border-radius: 16px;
+  padding:8px;
+  align-items: center;
+  margin-left: 8px;
+  margin-right: 8px;
+  cursor:pointer;
+
+  #icon {
+    height: 24px;
+    margin-right: 8px;
+  }
+}

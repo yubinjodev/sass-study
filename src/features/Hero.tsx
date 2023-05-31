@@ -1,12 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./hero.scss";
+
+import '../../styles/components/_hero.scss'
+
 import {
   faLocationDot,
   faAppleAlt,
   faPlay,
 } from "@fortawesome/free-solid-svg-icons";
-import DownloadButton from "@/components/DownloadButton/DownloadButton";
-import ProductHuntButton from "@/components/ProductHuntButton/ProductHuntButton";
+import DownloadButton from "@/components/DownloadButton";
+import ProductHuntButton from "@/components/ProductHuntButton";
 
 export default function Hero() {
   return (

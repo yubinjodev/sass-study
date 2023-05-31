@@ -1,4 +1,4 @@
-import "./downloadbutton.scss";
+import '../../styles/components/_buttons.scss'
 
 type Props={
     icon:React.ReactNode;
