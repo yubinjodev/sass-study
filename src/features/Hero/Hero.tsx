@@ -1,7 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./hero.scss";
-import { faLocationDot, faAppleAlt, faPlay } from "@fortawesome/free-solid-svg-icons";
+import {
+  faLocationDot,
+  faAppleAlt,
+  faPlay,
+} from "@fortawesome/free-solid-svg-icons";
 import DownloadButton from "@/components/DownloadButton/DownloadButton";
+import ProductHuntButton from "@/components/ProductHuntButton/ProductHuntButton";
 
 export default function Hero() {
   return (
@@ -23,18 +28,17 @@ export default function Hero() {
 
         <div className="hero__download">
           <DownloadButton
-            icon={ <FontAwesomeIcon id="icon" icon={faAppleAlt} />}
+            icon={<FontAwesomeIcon id="icon" icon={faAppleAlt} />}
             text="Download on the App Store"
           />
           <DownloadButton
-            icon={ <FontAwesomeIcon id="icon" icon={faPlay} />}
+            icon={<FontAwesomeIcon id="icon" icon={faPlay} />}
             text="Download on the App Store"
           />
-          
         </div>
 
         <div className="hero__producthunt">
-          <button>#3 Product of the Day</button>
+          <ProductHuntButton />
         </div>
       </div>
 
