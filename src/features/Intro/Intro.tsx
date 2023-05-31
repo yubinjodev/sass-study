@@ -4,9 +4,9 @@ export default function Intro() {
   return (
     <section className="intro">
       <div className="intro__persuade">
-        <div>
-          <h1>You do the shopping.</h1>
-          <h1>We do the returning.</h1>
+        <div className="intro__persuade__title">
+          <div>You do the shopping.</div>
+          <div>We do the returning.</div>
         </div>
 
         <div>images</div>
