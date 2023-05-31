@@ -1,17 +1,23 @@
+$primary: #8755de;
+$secondary: #39145d;
+
 .intro{
     &__persuade{
         height:100vh;
-        padding-left: 80px;
-        padding-right:80px;
         display:flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        background:#eee;
 
         &__title{
             display:flex;
             flex-direction: column;
-            align-items: center;
-            font-size: 5rem;
+            align-content: center;
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+            color:$secondary;
         }
     }
     &__return{
