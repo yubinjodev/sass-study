@@ -9,7 +9,10 @@ export default function Intro() {
           <div>We do the returning.</div>
         </div>
 
-        <div>images</div>
+        <div className="intro__persuade__image">
+          <img alt="" src="/images/intro/abstract.png"/>
+          <img alt="" src="/images/intro/shopping.png"/>
+        </div>
       </div>
 
       <div className="intro__return">
