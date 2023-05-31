@@ -1,13 +1,15 @@
-import "../../styles/global.scss"
+import "../../styles/global.scss";
 
 import Header from "@/features/Header/";
 import Hero from "@/features/Hero/";
+import Intro from "@/features/Intro/Intro";
 
 export default function Home() {
   return (
     <main>
       <Header />
-      <Hero/>
+      <Hero />
+      <Intro />
     </main>
   );
 }
