@@ -17,25 +17,29 @@
             font-weight: 700;
             text-align: center;
             color:$dark-purple;
+            margin-bottom: 40px;
         }
 
         &__image{
-            display:"flex";
+            display:flex;
             flex-direction: row;
-            width:100px;
-            height:100px;
+            width:fit-content;
+            height:200px;
 
             img{
                 width:100%;
                 height:100%;
+                margin-left: 8px;
             }
         }
     }
     
     &__return{
         height:100vh;
+        background: $grey-light;
     }
     &__money{
         height:100vh;
+        background: $grey-light;
     }
 }
