@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import '../../styles/components/_hero.scss'
+import '../../styles/pages/_hero.scss'
 
 import {
   faLocationDot,

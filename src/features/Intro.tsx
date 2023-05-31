@@ -1,4 +1,4 @@
-import '../../styles/components/_intro.scss'
+import '../../styles/pages/_intro.scss'
 
 export default function Intro() {
   return (
