@@ -1,4 +1,4 @@
-import '../../styles/pages/_intro.scss'
+import "../../styles/pages/_intro.scss";
 
 export default function Intro() {
   return (
@@ -10,8 +10,8 @@ export default function Intro() {
         </div>
 
         <div className="intro__persuade__image">
-          <img alt="" src="/images/intro/abstract.png"/>
-          <img alt="" src="/images/intro/shopping.png"/>
+          <img alt="" src="/images/intro/abstract.png" />
+          <img alt="" src="/images/intro/shopping.png" />
         </div>
       </div>
 
@@ -21,14 +21,13 @@ export default function Intro() {
         <div>carousel</div>
 
         <div>
-          <h3>We process returns from 5000+ retailers</h3>
-          <h3>Amazon, Shein, Target, Zara, H&M, Nordstrom and more</h3>
+          <div>We process returns from 5000+ retailers</div>
+          <div>Amazon, Shein, Target, Zara, H&M, Nordstrom and more</div>
         </div>
-
-        <div>WHY USE RETURNQUEEN</div>
       </div>
 
       <div className="intro__money">
+        <div>WHY USE RETURNQUEEN</div>
         <div>
           <h1>It`s the stress-free way to get your money back</h1>
         </div>
