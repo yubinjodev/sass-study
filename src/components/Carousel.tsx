@@ -16,7 +16,7 @@ export default function Carousel() {
   return (
     
       <Swiper
-        slidesPerView={4  }
+        slidesPerView={4}
         spaceBetween={30}
         className="carousel"
       >
