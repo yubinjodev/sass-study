@@ -1,3 +1,4 @@
+import Carousel from "@/components/Carousel";
 import "../../styles/pages/_intro.scss";
 
 export default function Intro() {
@@ -18,12 +19,12 @@ export default function Intro() {
       <div className="intro__return">
         <div>We return all your online purchases from any retailer</div>
 
-        <div>carousel</div>
+        <Carousel />
 
-        <div>
-          <div>We process returns from 5000+ retailers</div>
-          <div>Amazon, Shein, Target, Zara, H&M, Nordstrom and more</div>
+        <div className="intro__return__highlight">
+          We process returns from 5000+ retailers
         </div>
+        <div>Amazon, Shein, Target, Zara, H&M, Nordstrom and more</div>
       </div>
 
       <div className="intro__money">

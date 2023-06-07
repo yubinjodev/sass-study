@@ -1,53 +1,58 @@
-@import 'abstracts/variables';
+@import "abstracts/variables";
 
-.intro{
-    &__persuade{
-        height:100vh;
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background: $grey-light;
+.intro {
+  &__persuade {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: $grey-light;
 
-        &__title{
-            display:flex;
-            flex-direction: column;
-            align-content: center;
-            font-size: 3rem;
-            font-weight: 500;
-            text-align: center;
-            color:$dark-purple;
-            margin-bottom: 80px;
-        }
-
-        &__image{
-            display:flex;
-            flex-direction: row;
-            width:fit-content;
-            height:296px;
-
-            img{
-                width:100%;
-                height:100%;
-                margin-left: 8px;
-            }
-        }
+    &__title {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      font-size: 3rem;
+      font-weight: 500;
+      text-align: center;
+      color: $dark-purple;
+      margin-bottom: 80px;
     }
-    
-    &__return{
-        height:100vh;
-        background: $grey-light;
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        text-align: center;
-        font-size: 2rem;
-        color:$text-light;
 
+    &__image {
+      display: flex;
+      flex-direction: row;
+      width: fit-content;
+      height: 296px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        margin-left: 8px;
+      }
     }
-    &__money{
-        height:100vh;
-        background: $grey-light;
+  }
+
+  &__return {
+    height: 100vh;
+    background: $grey-light;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: $text-light;
+
+    &__highlight {
+      color: $primary;
     }
+  }
+  
+  &__money {
+    height: 100vh;
+    background: $grey-light;
+  }
 }
