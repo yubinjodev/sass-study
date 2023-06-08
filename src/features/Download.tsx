@@ -1,5 +1,12 @@
-import DownloadButton from "@/components/DownloadButton"
 import "../../styles/pages/_download.scss"
+
+import DownloadButton from "@/components/DownloadButton"
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faAppleAlt,
+  faPlay,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Download() {
     return(<section className="download">
@@ -15,13 +22,15 @@ export default function Download() {
                 <p>Experience our game-changing service today.</p>
 
                 <div className="download__block__divider">
-                    <div></div>
+                    <div className="image" >
+                        <img alt="" src="/images/download/people.png" />
+                    </div>
                     <div>Join our growing family of members who have found a better way to return.</div>
                 </div>
 
                 <div className="download__block__buttons">
-                    <DownloadButton icon="apple" text="Download on the App Store"/>
-                    <DownloadButton icon="play" text="Get it on Google Play"/>
+                    <DownloadButton icon={<FontAwesomeIcon id="icon" icon={faAppleAlt} />} text="Download on the App Store"/>
+                    <DownloadButton icon={<FontAwesomeIcon id="icon" icon={faPlay} />} text="Get it on Google Play"/>
                 </div>
             </div>
         </div>
