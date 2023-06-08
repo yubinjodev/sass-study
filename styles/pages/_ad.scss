@@ -1,0 +1,42 @@
+@import "abstracts/variables";
+
+hr {
+  width: 100%;
+  border: 2px solid $light-purple;
+}
+
+.ad {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 400px;
+  padding-right: 400px;
+
+  &__block {
+    display: flex;
+    flex-direction: row;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    &__title {
+      font-size: 4rem;
+      font-weight: 700;
+      background: linear-gradient(29.44deg, #8057c5 7.23%, #ff635e 91.35%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: right;
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+
+    &__text {
+      font-size: 2rem;
+      color: $dark-purple;
+      text-align: left;
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+  }
+}

@@ -1,6 +1,55 @@
 import Carousel from "@/components/Carousel";
 import "../../styles/pages/_intro.scss";
 
+const slides=[
+  {
+    name:"babadog",
+    imgPath:"/images/intro/brands/babadog.svg"
+  },
+  {
+    name:"gs",
+    imgPath:"/images/intro/brands/gs.svg"
+  },
+  {
+    name:"icandy",
+    imgPath:"/images/intro/brands/icandy.svg"
+  },
+  {
+    name:"jamestown",
+    imgPath:"/images/intro/brands/jamestown.svg"
+  },
+  {
+    name:"kik",
+    imgPath:"/images/intro/brands/kik.svg"
+  },
+  {
+    name:"opex-press",
+    imgPath:"/images/intro/brands/opex-press.svg"
+  },
+  {
+    name:"siacoin",
+    imgPath:"/images/intro/brands/siacoin.svg"
+  },
+  {
+    name:"teledeporte",
+    imgPath:"/images/intro/brands/teledeporte.svg"
+  },
+  {
+    name:"vip",
+    imgPath:"/images/intro/brands/vip.svg"
+  },
+  {
+    name:"volvo",
+    imgPath:"/images/intro/brands/volvo.svg"
+  },
+]
+
+export type Slide={
+  name:string;
+  imgPath?:string;
+  review?:string;
+}
+
 export default function Intro() {
   return (
     <section className="intro">
@@ -19,7 +68,7 @@ export default function Intro() {
       <div className="intro__return">
         <div>We return all your online purchases from any retailer</div>
 
-        <Carousel />
+        <Carousel className="intro__brands" slides={slides} type="image"/>
 
         <div className="intro__return__highlight">
           We process returns from 5000+ retailers
