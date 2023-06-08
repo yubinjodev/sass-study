@@ -1,4 +1,5 @@
 @import 'abstracts/variables';
+@import 'abstracts/breakpoints';
 
 .hero {
   display:flex;
@@ -6,16 +7,28 @@
   background-image: url("/images/hero/background.png");
   background-repeat: no-repeat;
   background-size: cover;
+  padding-left: 80px;
+  padding-right: 80px;
+  @include breakpoint(xs){
+    padding-left: 0;
+    padding-right: 0;
+}
 
   &__text{
     display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  min-height: 100vh;
-  height: 100%;
-  padding: 80px;
-  max-width: 50vw;
-  width:100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    height: 100%;
+    padding: 80px;
+    max-width: 50vw;
+    width:100%;
+    @include breakpoint(xs){
+      max-width:100%;
+      padding:0;
+      text-align: center;
+      align-items: center;
+    }
   }
 
   &__image{
@@ -29,14 +42,20 @@
     img{
       width:100%
     }
+    @include breakpoint(xs){
+      display:none;
+    }
   }
   
 
   &__title {
-    font-size: 3rem;
+    font-size: 5rem;
     background: linear-gradient(29.44deg,#8057c5 7.23%,#ff635e 91.35%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    @include breakpoint(xs){
+      font-size: 2rem;
+    }
   }
 
   &__subtitle{

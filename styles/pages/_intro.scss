@@ -1,4 +1,5 @@
 @import "abstracts/variables";
+@import 'abstracts/breakpoints';
 
 .intro {
   &__persuade {
@@ -25,6 +26,10 @@
       flex-direction: row;
       width: fit-content;
       height: 296px;
+      @include breakpoint(xs){
+        flex-direction: column;
+    }
+      
 
       img {
         width: 100%;
