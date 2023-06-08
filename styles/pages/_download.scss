@@ -1,0 +1,28 @@
+@import "abstracts/variables";
+
+.download{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:$white;
+
+    &__background{
+        background: linear-gradient(#be80d5,#8755de);
+        height:50vh;
+    }
+
+    &__block{
+        display:flex;
+        flex-direction: row;
+
+        &__image{
+            height:800px;
+
+            img{
+                height:100%;
+            }
+        }
+    }
+}

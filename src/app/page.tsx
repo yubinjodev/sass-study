@@ -7,6 +7,7 @@ import AnimatedAd from "@/features/AnimatedAd";
 import Instruction from "@/features/Instruction";
 import Ad from "@/features/Ad";
 import Testimonials from "@/features/Testimonials";
+import Download from "@/features/Download";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Instruction />
       <Ad/>
       <Testimonials/>
+      <Download/>
     </main>
   );
 }
