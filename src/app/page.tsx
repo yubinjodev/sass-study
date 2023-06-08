@@ -8,6 +8,7 @@ import Instruction from "@/features/Instruction";
 import Ad from "@/features/Ad";
 import Testimonials from "@/features/Testimonials";
 import Download from "@/features/Download";
+import Footer from "@/features/Footer";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <Ad/>
       <Testimonials/>
       <Download/>
+      <Footer/>
     </main>
   );
 }
