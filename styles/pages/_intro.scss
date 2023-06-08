@@ -35,7 +35,7 @@
   }
 
   &__return {
-    height: 50vh;  
+    height: 50vh;
     background: $grey-light;
     display: flex;
     flex-direction: column;
@@ -50,7 +50,7 @@
       color: $primary;
     }
   }
-  
+
   &__money {
     height: 100vh;
     background: $grey-light;
@@ -59,28 +59,53 @@
     align-items: center;
     justify-content: center;
 
-    &__main{
-        background: $light-purple;
-        color:$primary;
-        font-size: 2rem;
-        font-weight:700;
-        padding:24px;
-        border-radius: 40px;
+    &__main {
+      background: $light-purple;
+      color: $primary;
+      font-size: 2rem;
+      font-weight: 700;
+      padding: 24px;
+      border-radius: 40px;
     }
 
-    &__title{
-        font-size: 3rem;
-        color:$dark-purple;
+    &__title {
+      font-size: 3rem;
+      color: $dark-purple;
     }
 
-    &__blocks{
-        display:flex;
-        flex-direction: row;
-        text-align: center ;
+    &__blocks {
+      display: flex;
+      flex-direction: row;
+      text-align: center;
 
-        &__block{
-            
-        }
+    }
+
+    &__block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      color: $dark-purple;
+      margin-left: 8px;
+      margin-right: 8px;
+      min-height: 500px;
+      width: 400px;
+
+    }
+
+    &__image {
+      height: 120px;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    &__title {
+      font-size: 2rem;
+    }
+
+    &__text {
+      font-size: 1.5rem;
     }
   }
 }

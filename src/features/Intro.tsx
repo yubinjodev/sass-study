@@ -36,19 +36,43 @@ export default function Intro() {
 
         <div className="intro__money__blocks">
           <div className="intro__money__block">
-            <div className="intro__money__block__image">
+            <div className="intro__money__image">
               <img alt="" src="/images/intro/nomore/package.png" />
             </div>
-            <div className="intro__money__block__title">
-              <h6>No more</h6>
+            <div className="intro__money__title">
+              <h3>No more</h3>
               <p>packaging and printing</p>
             </div>
-            <div className="intro__money__block__text">
-              <p>Your time is too precious. Leave that up to us.</p>
+            <div className="intro__money__text">
+              <p>Your time is too precious. You can leave that up to us.</p>
+            </div>
+          </div>
+          <div className="intro__money__block">
+            <div className="intro__money__image">
+              <img alt="" src="/images/intro/nomore/post.png" />
+            </div>
+            <div className="intro__money__title">
+              <h3>No more</h3>
+              <p>post office trips</p>
+            </div>
+            <div className="intro__money__text">
+              <p>Its a nightmare! Every. Single. Time.</p>
+            </div>
+          </div>
+          <div className="intro__money__block">
+            <div className="intro__money__image">
+              <img alt="" src="/images/intro/nomore/refunds.png" />
+            </div>
+            <div className="intro__money__title">
+              <h3>No more</h3>
+              <p>missed refunds</p>
+            </div>
+            <div className="intro__money__text">
+              <p>Get your money back in time - every time.</p>
             </div>
           </div>
 
-         
+
         </div>
       </div>
     </section>

@@ -3,8 +3,8 @@ import "../../styles/global.scss";
 import Header from "@/features/Header";
 import Hero from "@/features/Hero";
 import Intro from "@/features/Intro";
-
-import Carousel from "@/components/Carousel";
+import AnimatedAd from "@/features/AnimatedAd";
+import Instruction from "@/features/Instruction";
 
 export default function Home() {
   return (
@@ -12,6 +12,8 @@ export default function Home() {
       <Header />
       <Hero />
       <Intro />
+      <AnimatedAd />
+      <Instruction />
     </main>
   );
 }
