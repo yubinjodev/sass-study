@@ -10,8 +10,8 @@
   padding-left: 80px;
   padding-right: 80px;
   @include breakpoint(xs){
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
   &__text{
@@ -54,7 +54,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     @include breakpoint(xs){
-      font-size: 2rem;
+      margin-top: 80px;
+      font-size: 3rem;
     }
   }
 
@@ -69,21 +70,26 @@
     align-items: center;
     background: #fff;
     height: 64px;
-    width: 400px;
+    width: fit-content;
     height:100%;
     padding:8px;
     border-radius: 16px;
+    border:1px solid $grey-medium;
 
     #icon{  
       height:32px;
       margin:16px;
       color:$primary;
+
     }
 
     input{
       border:none;
       outline:none;
       font-size: 1.25rem;
+      @include breakpoint(xs){
+        width: 248px;
+      }
     }
 
     button{
@@ -94,7 +100,7 @@
       border-radius: 16px;
       font-size: 1.25rem;
       outline:none;
-      cursor:pointer
+      cursor:pointer;
     }
   }
 
