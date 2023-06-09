@@ -1,13 +1,12 @@
 @import "abstracts/variables";
-@import 'abstracts/breakpoints';
+@import "abstracts/breakpoints";
 
 .intro {
   background: $grey-light;
-  @include breakpoint(xs){
+  @include breakpoint(xs) {
     padding-left: 16px;
     padding-right: 16px;
-    
-}
+  }
   &__persuade {
     height: 100vh;
     display: flex;
@@ -24,30 +23,29 @@
       text-align: center;
       color: $dark-purple;
       margin-bottom: 80px;
-      @include breakpoint(xs){
+      @include breakpoint(xs) {
         margin-bottom: 24px;
-    }
+      }
     }
 
     &__image {
       display: flex;
       flex-direction: row;
       height: 296px;
-      @include breakpoint(xs){
+      @include breakpoint(xs) {
         flex-direction: column;
         height: 600px;
-    }
-      
+      }
 
       img {
         width: 100%;
         height: 100%;
         margin-left: 8px;
 
-        @include breakpoint(xs){
+        @include breakpoint(xs) {
           margin-left: 0;
           margin-bottom: 8px;
-      }
+        }
       }
     }
   }
@@ -63,6 +61,11 @@
     font-size: 2rem;
     font-weight: 700;
     color: $text-light;
+    border: 1px solid red;
+
+    @include breakpoint(xs) {
+      height: 100vh;
+    }
 
     &__highlight {
       color: $primary;
@@ -95,7 +98,6 @@
       display: flex;
       flex-direction: row;
       text-align: center;
-
     }
 
     &__block {
@@ -107,7 +109,6 @@
       margin-right: 8px;
       min-height: 500px;
       width: 400px;
-
     }
 
     &__image {
