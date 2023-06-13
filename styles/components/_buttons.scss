@@ -1,3 +1,5 @@
+@import 'abstracts/breakpoints';
+
 .producthuntbutton{
     height: 60px;
     width: fit-content;
@@ -33,6 +35,10 @@
   margin-left: 8px;
   margin-right: 8px;
   cursor:pointer;
+  @include breakpoint(xs){
+    margin-bottom: 8px;
+  }
+  
 
   #icon {
     height: 24px;

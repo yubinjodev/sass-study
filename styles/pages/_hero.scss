@@ -76,6 +76,10 @@
     border-radius: 16px;
     border:1px solid $grey-medium;
 
+    @include breakpoint(xs){
+      display: none;
+    }
+
     #icon{  
       height:32px;
       margin:16px;
@@ -87,9 +91,7 @@
       border:none;
       outline:none;
       font-size: 1.25rem;
-      @include breakpoint(xs){
-        width: 248px;
-      }
+      
     }
 
     button{
@@ -107,5 +109,9 @@
   &__download{
    display:flex;
    flex-direction: row;
+
+   @include breakpoint(xs){
+    flex-direction: column;
+  }
   }
 }

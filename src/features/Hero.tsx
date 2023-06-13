@@ -1,12 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import '../../styles/pages/_hero.scss'
+import "../../styles/pages/_hero.scss";
 
-import {
-  faLocationDot,
-  faAppleAlt,
-  faPlay,
-} from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faApple, faGooglePlay } from "@fortawesome/free-brands-svg-icons";
 import DownloadButton from "@/components/DownloadButton";
 import ProductHuntButton from "@/components/ProductHuntButton";
 
@@ -30,11 +27,11 @@ export default function Hero() {
 
         <div className="hero__download">
           <DownloadButton
-            icon={<FontAwesomeIcon id="icon" icon={faAppleAlt} />}
+            icon={<FontAwesomeIcon id="icon" icon={faApple} />}
             text="Download on the App Store"
           />
           <DownloadButton
-            icon={<FontAwesomeIcon id="icon" icon={faPlay} />}
+            icon={<FontAwesomeIcon id="icon" icon={faGooglePlay} />}
             text="Download on the App Store"
           />
         </div>

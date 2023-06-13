@@ -1,4 +1,5 @@
 @import "abstracts/variables";
+@import 'abstracts/breakpoints';
 
 .instruction {
   height: 100vh;
@@ -6,6 +7,10 @@
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+  border:1px solid red;
+  @include breakpoint(xs){
+    height: fit-content;
+}
 
   &__main{
     background: $light-purple;
@@ -22,11 +27,17 @@
     background: linear-gradient(29.44deg,#8057c5 7.23%,#ff635e 91.35%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-align: center;
   }
 
   &__blocks {
     display: flex;
     flex-direction: row;
+
+    @include breakpoint(xs){
+      flex-direction: column;
+      // display: none;
+  }
   }
 
   &__block {
