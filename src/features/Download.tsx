@@ -3,10 +3,8 @@ import "../../styles/pages/_download.scss"
 import DownloadButton from "@/components/DownloadButton"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faAppleAlt,
-  faPlay,
-} from "@fortawesome/free-solid-svg-icons";
+
+import {faApple, faGooglePlay} from "@fortawesome/free-brands-svg-icons"
 
 export default function Download() {
     return(<section className="download">
@@ -25,12 +23,12 @@ export default function Download() {
                     <div className="image" >
                         <img alt="" src="/images/download/people.png" />
                     </div>
-                    <div>Join our growing family of members who have found a better way to return.</div>
+                    <p>Join our growing family of members who have found a better way to return.</p>
                 </div>
 
                 <div className="download__block__buttons">
-                    <DownloadButton icon={<FontAwesomeIcon id="icon" icon={faAppleAlt} />} text="Download on the App Store"/>
-                    <DownloadButton icon={<FontAwesomeIcon id="icon" icon={faPlay} />} text="Get it on Google Play"/>
+                    <DownloadButton icon={<FontAwesomeIcon id="icon" icon={faApple} />} text="Download on the App Store"/>
+                    <DownloadButton icon={<FontAwesomeIcon id="icon" icon={faGooglePlay} />} text="Get it on Google Play"/>
                 </div>
             </div>
         </div>

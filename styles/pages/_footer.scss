@@ -1,69 +1,98 @@
 @import "abstracts/variables";
+@import "abstracts/breakpoints";
 
-.footer{
-    height:50vh;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    background: $light-purple;
-    &__main{
-        width: 300px;
-        height:300px;
-        display:flex;
-        flex-direction:column;
-        // border:1px solid red;
-        justify-content: space-between;
+.footer {
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background: $light-purple;
+  @include breakpoint(xs) {
+    flex-direction: column;
+    height: fit-content;
+    padding: 16px;
+  }
 
-        &__logo{
-            width:100%;
-            img{
-                width:100%;
-            }
-        }
+  * {
+    // border: 1px solid red;
+  }
 
-        &__social{
-            display:flex;
-            justify-content: space-between;
-                #icon{
-                    width:56px;
-                    height:56px;
-                    background:$white;
-                    border-radius:50%;
-                    padding:16px;
-                    color:$dark-purple;
-                }
-        }
+  &__main {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include breakpoint(xs) {
+        height: fit-content;
+        padding: 16px;
+      }
+    
+
+    &__title{
+        @include breakpoint(xs) {
+            padding-top: 16px;
+            padding-bottom: 16px;
+          }
+    }
+    &__logo {
+      width: 100%;
+      img {
+        width: 100%;
+      }
     }
 
-    &__map{
-        width: 300px;
-        height:300px;
-        display:flex;
-        flex-direction:column;
-        &__title{
-            font-weight: 700;
-        }
+    &__social {
+      display: flex;
+      justify-content: space-between;
+      #icon {
+        width: 56px;
+        height: 56px;
+        background: $white;
+        border-radius: 50%;
+        padding: 16px;
+        color: $dark-purple;
+      }
+    }
+  }
+
+  &__map {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    @include breakpoint(xs) {
+        height: fit-content;
+        padding: 16px;
+      }
+    &__title {
+      font-weight: 700;
+    }
+  }
+
+  &__support {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    @include breakpoint(xs) {
+        height: fit-content;
+        padding: 16px;
+      }
+    &__title {
+      font-weight: 700;
     }
 
-    &__support{
-        width: 300px;
-        height:300px;
-        display:flex;
-        flex-direction:column;
-         &__title{
-            font-weight: 700;
+    &__list {
+      span {
+        color: $primary;
+        #icon {
+          width: 16px;
+          height: 16px;
+          margin-right: 8px;
         }
-
-        &__list{
-            span{
-                color:$primary;
-               #icon{
-                width: 16px;
-                height: 16px;
-                margin-right: 8px;
-               }
-            }
-        }
+      }
     }
+  }
 }

@@ -1,7 +1,5 @@
 import "../../styles/pages/_ad.scss";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinesLeaning } from "@fortawesome/free-solid-svg-icons";
 
 export default function Ad() {
   return (

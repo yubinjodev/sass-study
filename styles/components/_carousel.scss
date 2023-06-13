@@ -1,3 +1,5 @@
+@import "abstracts/breakpoints";
+
 .swiper {
   width: 100%;
   height: fit-content;
@@ -30,13 +32,18 @@
 }
 
 .block{
-  // border:1px solid red;
-  // height:500px;
   &__review{
     font-weight: 700;
+    @include breakpoint(xs) {
+      font-weight: 500;
+      font-size: 0.5rem;
+    }
   }
 
   &__name{
     font-size: 0.8rem;
+    @include breakpoint(xs) {
+      display:none;
+    }
   }
 }

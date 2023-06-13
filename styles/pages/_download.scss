@@ -1,4 +1,5 @@
 @import "abstracts/variables";
+@import "abstracts/breakpoints";
 
 .download{
     height:100vh;
@@ -7,6 +8,7 @@
     align-items: center;
     justify-content: center;
     color:$white;
+    padding: 16px;
 
     &__background{
         background: linear-gradient(#be80d5,#8755de);
@@ -17,11 +19,21 @@
         padding-left: 80px;
         padding-right: 80px;
         max-width: 1200px;
+        width: 100%;
+        @include breakpoint(xs) {
+            height:100%;
+            padding:16px;
+        }
+        
     }
 
     &__block{
         display:flex;
         flex-direction: row;
+        align-items: center;
+        @include breakpoint(xs) {
+            flex-direction: column;
+        }
         *{
             // border:1px solid red;
         }
@@ -29,10 +41,16 @@
         &__buttons{
             display: flex;
             flex-direction: row;
+            @include breakpoint(xs) {
+                flex-direction: column;
+            }
         }
 
         &__image{
             height:700px;
+            @include breakpoint(xs) {
+                height:350px;
+            }
 
             img{
                 height:100%;
@@ -60,13 +78,19 @@
 
             h1{
                 font-size: 2rem;
+                @include breakpoint(xs) {
+                    font-size: 1rem;
+                }
             }
             p{
                 font-size: 1.5rem;
+                @include breakpoint(xs) {
+                    font-size: 0.8rem;
+                }
             }
             
 
-            *{
+            >*{
                 margin-top: 8px;
                 margin-bottom: 8px;
             }

@@ -1,4 +1,5 @@
 @import "abstracts/variables";
+@import "abstracts/breakpoints";
 
 .testimonals{
     height:100vh;
@@ -7,18 +8,28 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    text-align: center;
+    @include breakpoint(xs) {
+        padding: 16px;
+        height:80vh;
+      }
 
     &__title{
-        background: $light-purple;
       color: $primary;
       font-size: 2rem;
       font-weight: 700;
       padding: 24px;
       border-radius: 40px;
+     
     }
 
     &__quote{
         font-size: 4rem;
         color: $dark-purple;
+        
+        @include breakpoint(xs) {
+            font-size: 2rem;
+            
+          }
     }
 }
