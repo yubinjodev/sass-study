@@ -24,6 +24,14 @@
             height:100%;
             padding:16px;
         }
+        @include breakpoint(sm) {
+            height:100%;
+            padding:16px;
+        }
+        @include breakpoint(md) {
+            padding:16px;
+        }
+        
         
     }
 
@@ -34,8 +42,8 @@
         @include breakpoint(xs) {
             flex-direction: column;
         }
-        *{
-            // border:1px solid red;
+        @include breakpoint(sm) {
+            flex-direction: column;
         }
 
         &__buttons{
@@ -50,6 +58,12 @@
             height:700px;
             @include breakpoint(xs) {
                 height:350px;
+            }
+            @include breakpoint(sm) {
+                height:450px;
+            }
+            @include breakpoint(md) {
+                height:500px;
             }
 
             img{

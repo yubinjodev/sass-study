@@ -13,9 +13,14 @@
     height: fit-content;
     padding: 16px;
   }
-
-  * {
-    // border: 1px solid red;
+  @include breakpoint(sm) {
+    flex-direction: column;
+    height: fit-content;
+    padding: 16px;
+    align-items: flex-start;
+  }
+  @include breakpoint(md) {
+    padding: 40px;
   }
 
   &__main {
@@ -25,16 +30,24 @@
     flex-direction: column;
     justify-content: space-between;
     @include breakpoint(xs) {
-        height: fit-content;
-        padding: 16px;
-      }
+      height: fit-content;
+      padding: 16px;
+    }
+    @include breakpoint(sm) {
+      height: fit-content;
+      padding: 16px;
+    }
     
 
-    &__title{
-        @include breakpoint(xs) {
-            padding-top: 16px;
-            padding-bottom: 16px;
-          }
+    &__title {
+      @include breakpoint(xs) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+      }
+      @include breakpoint(sm) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+      }
     }
     &__logo {
       width: 100%;
@@ -62,10 +75,20 @@
     height: 300px;
     display: flex;
     flex-direction: column;
+    margin-left: 80px;
+    margin-right: 80px;
     @include breakpoint(xs) {
-        height: fit-content;
-        padding: 16px;
-      }
+      height: fit-content;
+      padding: 16px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    @include breakpoint(sm) {
+      height: fit-content;
+      padding: 16px;
+      margin-left: 0;
+      margin-right: 0;
+    }
     &__title {
       font-weight: 700;
     }
@@ -77,9 +100,13 @@
     display: flex;
     flex-direction: column;
     @include breakpoint(xs) {
-        height: fit-content;
-        padding: 16px;
-      }
+      height: fit-content;
+      padding: 16px;
+    }
+    @include breakpoint(sm) {
+      height: fit-content;
+      padding: 16px;
+    }
     &__title {
       font-weight: 700;
     }

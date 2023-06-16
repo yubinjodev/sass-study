@@ -18,6 +18,9 @@
     @include breakpoint(xs){
         justify-content:center;
     }
+    @include breakpoint(sm){
+        padding: 24px;
+    }
 
     button{
         border:none;
@@ -43,6 +46,9 @@
         }
 
         @include breakpoint(xs){
+            display:none;
+        }
+        @include breakpoint(sm){
             display:none;
         }
     }
