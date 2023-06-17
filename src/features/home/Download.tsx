@@ -27,7 +27,7 @@ export default function Download() {
                 </div>
 
                 <div className="download__block__buttons">
-                    <DownloadButton icon={<FontAwesomeIcon id="icon" icon={faApple} />} text="Download on the App Store"/>
+                    <DownloadButton apple icon={<FontAwesomeIcon id="icon" icon={faApple} />} text="Download on the App Store"/>
                     <DownloadButton icon={<FontAwesomeIcon id="icon" icon={faGooglePlay} />} text="Get it on Google Play"/>
                 </div>
             </div>
