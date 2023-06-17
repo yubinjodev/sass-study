@@ -9,7 +9,7 @@ import {
 
 export default function Footer() {
   return (
-    <section className="footer">
+    <footer className="footer">
       <div className="footer__main">
         <div className="footer__main__logo">
             <img alt="" src="/images/header/logo.png"/>
@@ -44,6 +44,6 @@ export default function Footer() {
         </ul>
       </div>
       
-    </section>
+    </footer>
   );
 }
