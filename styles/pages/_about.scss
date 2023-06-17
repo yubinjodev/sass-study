@@ -1,0 +1,104 @@
+@import "abstracts/variables";
+@import "abstracts/breakpoints";
+
+.about {
+  height: fit-content;
+  width: 100%;
+  margin-top: 160px;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.25rem;
+  line-height: 40px;
+
+  &__top {
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: column-reverse;
+
+    @include breakpoint(md) {
+      flex-direction: row;
+    }
+
+    &__right {
+      border: 1px solid red;
+      @include breakpoint(sm) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      @include breakpoint(md) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+
+    &__title {
+        text-align: center;
+      background: linear-gradient(89.59deg, #b79ee0 -2.22%, #ff635e 140.1%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  &__topright {
+    &__container {
+      @include breakpoint(sm) {
+        display: flex;
+        flex-direction: row;
+      }
+      @include breakpoint(md) {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+
+    &__box {
+      margin-top: 32px;
+      margin-bottom: 32px;
+      @include breakpoint(sm) {
+        margin-left: 32px;
+        margin-right: 32px;
+      }
+      @include breakpoint(md) {
+        margin-left: 32px;
+        margin-right: 32px;
+      }
+    }
+
+    &__number {
+      font-size: 2rem;
+      font-weight: 700;
+      color: $dark-purple;
+    }
+  }
+
+  &__bottom {
+    border: 1px solid green;
+
+    @include breakpoint(md) {
+      display: flex;
+      flex-direction: row;
+    }
+
+    p {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      @include breakpoint(md) {
+        margin-top: 0;
+      }
+    }
+
+    &__title {
+      color: $primary;
+      font-weight: 700;
+      font-size: 2rem;
+    }
+  }
+}
