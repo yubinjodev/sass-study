@@ -10,7 +10,7 @@ export default function ProductHuntButton() {
         <FontAwesomeIcon id="icon" icon={faMedal} />
       </div>
       <div className="producthuntbutton__text">
-        <div>PRODUCT OF THE DAY</div>
+        <div>PRODUCT HUNT</div>
         <div>#3 Product of the Day</div>
       </div>
     </div>
