@@ -12,16 +12,18 @@ import Footer from "@/features/Footer";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Header />
-      <Hero />
-      <Intro />
-      <AnimatedAd />
-      <Instruction />
-      <Ad/>
-      <Testimonials/>
-      <Download/>
-      <Footer/>
-    </main>
+      <main>
+        <Hero />
+        <Intro />
+        <AnimatedAd />
+        <Instruction />
+        <Ad />
+        <Testimonials />
+        <Download />
+      </main>
+      <Footer />
+    </>
   );
 }
