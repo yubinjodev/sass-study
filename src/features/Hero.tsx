@@ -32,7 +32,7 @@ export default function Hero() {
           />
           <DownloadButton
             icon={<FontAwesomeIcon id="icon" icon={faGooglePlay} />}
-            text="Download on the App Store"
+            text="Get it on Google Play"
           />
         </div>
 
