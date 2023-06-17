@@ -1,67 +1,67 @@
-@import 'abstracts/variables';
-@import 'abstracts/breakpoints';
+@import "abstracts/variables";
+@import "abstracts/breakpoints";
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;    
-    flex-direction: row;
-    padding: 24px 80px;
-    max-width: 100vw;
-    width:100%;
-    position:fixed;
-    top:0;
-    left:0;
-    background:$white;
-    z-index: 999;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 24px 80px;
+  max-width: 100vw;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: $white;
+  z-index: 999;
 
-    @include breakpoint(xs){
-        justify-content:center;
+  @include breakpoint(xs) {
+    justify-content: center;
+  }
+  @include breakpoint(sm) {
+    padding: 24px;
+  }
+
+  button {
+    border: none;
+    font-size: 1rem;
+  }
+
+  &__logo {
+    width: 200px;
+    height: 36px;
+    img {
+      width: 100%;
+      height: 100%;
     }
-    @include breakpoint(sm){
-        padding: 24px;
-    }
+  }
 
-    button{
-        border:none;
-        font-size:1rem;
-    }
-
-    
-    &__logo{
-        width: 200px;
-        height: 36px;
-        img{
-            width: 100%;
-            height: 100%;
-        }
-    }
-
-    &__controls{
-        button{
-            margin-left: 8px;
-            margin-right: 8px;
-            background: none;
-            
-        }
-
-        @include breakpoint(xs){
-            display:none;
-        }
-        @include breakpoint(sm){
-            display:none;
-        }
+  &__controls {
+    li {
+      margin-left: 8px;
+      margin-right: 8px;
+      background: none;
+      display:inline;
     }
 
-    &__download{
-        @include breakpoint(xs){
-            display:none;
-        }
-        button{
-            background:$primary;
-            color:$white;
-            padding: 16px 24px;
-            border-radius: 40px
-        }
+    @include breakpoint(xs) {
+      display: none;
     }
+    @include breakpoint(sm) {
+      display: none;
+    }
+  }
+
+  &__download {
+    @include breakpoint(xs) {
+      display: none;
+    }
+    button {
+      background: $primary;
+      color: $white;
+      padding: 16px 24px;
+      border-radius: 40px;
+      cursor: pointer;
+    }
+  }
 }

@@ -1,0 +1,13 @@
+@import "abstracts/variables";
+@import "abstracts/breakpoints";
+
+.qrdownloaddialog{
+    position: absolute;
+    top:0;
+    left:0;
+    height:600px;
+    width:600px;
+    background:blue;
+    color:$white;
+    z-index: 999;
+}
