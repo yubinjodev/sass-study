@@ -1,5 +1,5 @@
 import Carousel from "@/components/Carousel";
-import "../../styles/pages/_intro.scss";
+import "../../../styles/pages/_intro.scss";
 
 const slides=[
   {

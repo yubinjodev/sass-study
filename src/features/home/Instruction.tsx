@@ -1,4 +1,4 @@
-import "../../styles/pages/_instruction.scss";
+import "../../../styles/pages/_instruction.scss";
 
 export default function Instruction() {
   return (

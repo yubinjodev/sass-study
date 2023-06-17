@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 import '../../styles/components/_carousel.scss';
 
 // import required modules
-import { Slide } from "@/features/Intro";
+import { Slide } from "@/features/home/Intro";
 
 type Props={
   className: string;

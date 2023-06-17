@@ -1,14 +1,16 @@
 import "../../styles/global.scss";
 
-import Header from "@/features/Header";
-import Hero from "@/features/Hero";
-import Intro from "@/features/Intro";
-import AnimatedAd from "@/features/AnimatedAd";
-import Instruction from "@/features/Instruction";
-import Ad from "@/features/Ad";
-import Testimonials from "@/features/Testimonials";
-import Download from "@/features/Download";
-import Footer from "@/features/Footer";
+import Hero from "@/features/home/Hero";
+import Intro from "@/features/home/Intro";
+import Instruction from "@/features/home/Instruction";
+import Ad from "@/features/home/Ad";
+import Testimonials from "@/features/home/Testimonials";
+import Download from "@/features/home/Download";
+import Footer from "@/components/Footer";
+import AnimatedAd from "@/features/home/AnimatedAd";
+import Header from "@/components/Header";
+
+
 
 export default function Home() {
   return (

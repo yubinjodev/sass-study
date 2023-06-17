@@ -1,6 +1,7 @@
+import "../../../styles/pages/_hero.scss";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import "../../styles/pages/_hero.scss";
 
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faApple, faGooglePlay } from "@fortawesome/free-brands-svg-icons";

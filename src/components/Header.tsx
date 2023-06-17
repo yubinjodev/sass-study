@@ -36,14 +36,24 @@ export default function Header() {
     <>
       <header className="header">
         <div className="header__logo">
-          <img alt="" src="images/header/logo.png" />
+          <a href="/">
+            <img alt="" src="images/header/logo.png" />
+          </a>
         </div>
         <nav className="header__controls">
           <ul>
-            <li><a href="/about">About</a></li>
-            <li><a href="/how-it-works">How it works</a></li>
-            <li><a href="/pricing">Pricing</a></li>
-            <li><a href="/blog">Blog</a></li>
+            <li>
+              <a href="/about">About</a>
+            </li>
+            <li>
+              <a href="/how-it-works">How it works</a>
+            </li>
+            <li>
+              <a href="/pricing">Pricing</a>
+            </li>
+            <li>
+              <a href="/blog">Blog</a>
+            </li>
           </ul>
         </nav>
 
