@@ -59,9 +59,9 @@
     &__social {
       display: flex;
       justify-content: space-between;
-      #icon {
-        width: 56px;
-        height: 56px;
+      #facebook_icon, #twitter_icon, #ig_icon, #linkedin_icon {
+        width: 24px;
+        height: 24px;
         background: $white;
         border-radius: 50%;
         padding: 16px;
@@ -114,7 +114,7 @@
     &__list {
       span {
         color: $primary;
-        #icon {
+        #phone_icon, #email_icon {
           width: 16px;
           height: 16px;
           margin-right: 8px;

@@ -36,9 +36,7 @@
   flex-direction: column;
   justify-content: flex-start;
   height: 100%;
-  #icon{
-    color: gold;
-  }
+  
   &__review{
     @include breakpoint(xs) {
       font-size: 0.5rem;
@@ -48,6 +46,12 @@
     }
     @include breakpoint(md) {
       font-size: 1rem;
+    }
+  }
+
+  &__stars{
+    #icon{
+      color: gold;
     }
   }
 

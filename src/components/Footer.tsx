@@ -20,10 +20,10 @@ export default function Footer() {
           You hate returns. We love them! We pick up right from your doorstep.
         </div>
         <div className="footer__main__social">
-          <FontAwesomeIcon id="icon" icon={faFacebookF} />
-          <FontAwesomeIcon id="icon" icon={faTwitter} />
-          <FontAwesomeIcon id="icon" icon={faInstagram} />
-          <FontAwesomeIcon id="icon" icon={faLinkedin} />
+          <FontAwesomeIcon id="facebook_icon" icon={faFacebookF} />
+          <FontAwesomeIcon id="twitter_icon" icon={faTwitter} />
+          <FontAwesomeIcon id="ig_icon" icon={faInstagram} />
+          <FontAwesomeIcon id="linkedin_icon" icon={faLinkedin} />
         </div>
       </div>
       <div className="footer__map">
@@ -43,13 +43,13 @@ export default function Footer() {
           <li>FAQ</li>
           <li>
             <span>
-              <FontAwesomeIcon id="icon" icon={faPhone} />
+              <FontAwesomeIcon id="phone_icon" icon={faPhone} />
             </span>
             (888) 787 - 3027
           </li>
           <li>
             <span>
-              <FontAwesomeIcon id="icon" icon={faEnvelope} />
+              <FontAwesomeIcon id="email_icon" icon={faEnvelope} />
             </span>
             support@returnqueen.com
           </li>
