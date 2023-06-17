@@ -19,11 +19,11 @@ export default function Hero() {
           <h3>No more driving</h3>
         </div>
 
-        <div className="hero__zipcode">
+        {/* <div className="hero__zipcode">
           <FontAwesomeIcon id="icon" icon={faLocationDot} />
           <input placeholder="Enter your zip code" />
           <button>GO!</button>
-        </div>
+        </div> */}
 
         <div className="hero__download">
           <DownloadButton

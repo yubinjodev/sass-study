@@ -50,18 +50,22 @@
   }
 
   &__stars{
+    
     #icon{
       color: gold;
+      @include breakpoint(xs) {
+        font-size: 0.5rem;
+      }
     }
   }
 
   &__name{
     font-size: 0.8rem;
     @include breakpoint(xs) {
-      display:none;
+      font-size: 0.5rem;
     }
     @include breakpoint(sm) {
-      display:none;
+      font-size: 0.5rem;
     }
   }
 }
