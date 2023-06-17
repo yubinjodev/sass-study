@@ -40,15 +40,11 @@ export default function Header() {
         </div>
         <nav className="header__controls">
           <ul>
-            <li>About</li>
-            <li>How it works</li>
-            <li>Pricing</li>
-            <li>Blog</li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/how-it-works">How it works</a></li>
+            <li><a href="/pricing">Pricing</a></li>
+            <li><a href="/blog">Blog</a></li>
           </ul>
-          {/* <button>About</button>
-          <button>How it works</button>
-          <button>Pricing</button>
-          <button>Blog</button> */}
         </nav>
 
         <div className="header__download">
