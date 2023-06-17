@@ -21,7 +21,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height:100px;
+  height:200px;
 }
 
 .swiper-slide img {
@@ -32,18 +32,21 @@
 }
 
 .block{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  #icon{
+    color: gold;
+  }
   &__review{
-    font-weight: 700;
     @include breakpoint(xs) {
-      font-weight: 500;
       font-size: 0.5rem;
     }
     @include breakpoint(sm) {
-      font-weight: 500;
       font-size: 0.8rem;
     }
     @include breakpoint(md) {
-      font-weight: 500;
       font-size: 1rem;
     }
   }

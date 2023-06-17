@@ -12,6 +12,9 @@ import '../../styles/components/_carousel.scss';
 // import required modules
 import { Slide } from "@/features/home/Intro";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+
 type Props={
   className: string;
   slides: Slide[];
@@ -33,6 +36,13 @@ export default function Carousel(props:Props) {
           {type==="text" && 
           <div className="block">
             <div className="block__review">{slide.review}</div>
+            <div className="block__stars">
+            <FontAwesomeIcon id="icon" icon={faStar} />
+            <FontAwesomeIcon id="icon" icon={faStar} />
+            <FontAwesomeIcon id="icon" icon={faStar} />
+            <FontAwesomeIcon id="icon" icon={faStar} />
+            <FontAwesomeIcon id="icon" icon={faStar} />
+            </div>
             <div className="block__name">{slide.name}</div>
           </div>}
         </SwiperSlide>
