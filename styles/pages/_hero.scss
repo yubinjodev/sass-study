@@ -48,10 +48,7 @@
       align-items: center;
     }
     @include breakpoint(md) {
-      max-width: 100%;
-      padding: 0;
-      text-align: center;
-      align-items: center;
+     padding: 40px;
     }
   }
 
