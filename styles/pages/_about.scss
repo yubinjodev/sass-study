@@ -12,17 +12,27 @@
   font-size: 1.25rem;
   line-height: 40px;
 
+  @include breakpoint(md) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  @include breakpoint(lg) {
+    padding-left: 160px;
+    padding-right: 160px;
+  }
+
   &__top {
-    border: 1px solid blue;
     display: flex;
     flex-direction: column-reverse;
 
     @include breakpoint(md) {
       flex-direction: row;
     }
+    @include breakpoint(lg) {
+      flex-direction: row;
+    }
 
     &__right {
-      border: 1px solid red;
       @include breakpoint(sm) {
         display: flex;
         flex-direction: column;
@@ -32,7 +42,23 @@
       @include breakpoint(md) {
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
+      }
+      @include breakpoint(lg) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &__left{
+      @include breakpoint(md){
+        width: 50%;
+      }
+      @include breakpoint(lg){
+        width: 50%;
       }
     }
 
@@ -41,7 +67,7 @@
     }
 
     &__title {
-        text-align: center;
+      text-align: center;
       background: linear-gradient(89.59deg, #b79ee0 -2.22%, #ff635e 140.1%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -54,6 +80,10 @@
         flex-direction: row;
       }
       @include breakpoint(md) {
+        display: flex;
+        flex-direction: row;
+      }
+      @include breakpoint(lg) {
         display: flex;
         flex-direction: row;
       }
@@ -70,6 +100,10 @@
         margin-left: 32px;
         margin-right: 32px;
       }
+      @include breakpoint(lg) {
+        margin-left: 32px;
+        margin-right: 32px;
+      }
     }
 
     &__number {
@@ -80,9 +114,21 @@
   }
 
   &__bottom {
-    border: 1px solid green;
+    &__left,
+    &__right {
+      @include breakpoint(md) {
+        padding-right: 40px;
+      }
+      @include breakpoint(lg) {
+        padding-right: 40px;
+      }
+    }
 
     @include breakpoint(md) {
+      display: flex;
+      flex-direction: row;
+    }
+    @include breakpoint(lg) {
       display: flex;
       flex-direction: row;
     }
@@ -91,6 +137,9 @@
       margin-top: 40px;
       margin-bottom: 40px;
       @include breakpoint(md) {
+        margin-top: 0;
+      }
+      @include breakpoint(lg) {
         margin-top: 0;
       }
     }
