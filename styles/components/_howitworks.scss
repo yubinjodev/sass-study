@@ -2,12 +2,12 @@
 @import "abstracts/breakpoints";
 
 .howitworks{
-    padding: 240px;
+    padding: 240px 240px 80px 240px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background: $grey-light;
+    // background: $grey-light;
 
     @include breakpoint(xs){
         padding: 160px 24px 24px 24px;
@@ -38,7 +38,6 @@
         font-weight: 500;
         margin-top: 16px;
         margin-bottom: 80px;
-        text-align: center;
 
         @include breakpoint(xs){
             font-size: 1rem;
@@ -52,12 +51,17 @@
         display: flex;
         flex-direction: row;
         margin-bottom: 160px;
+        justify-content: center;
     }
+
+    
 
     &__type2{
         display: flex;
         flex-direction: row-reverse;
         margin-bottom: 160px;
+
+        
     }
 
     &__type1, &__type2{
@@ -75,6 +79,7 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+        
 
         @include breakpoint(xs){
             padding:0;
@@ -82,10 +87,15 @@
         @include breakpoint(sm){
             padding:0;
         }
+        @include breakpoint(md){
+            width: 50%;
+        }
 
         >*{
             margin-bottom: 24px;
         }
+
+       
 
         &__title{
             color: $dark-purple;
@@ -105,7 +115,10 @@
     }
 
     &__image{
-        width: 100%;
+        @include breakpoint(md){
+            width: 50%;
+            margin: auto;
+        }
 
         img{
             width: 100%;
