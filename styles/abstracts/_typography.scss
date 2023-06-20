@@ -1,0 +1,9 @@
+@import "abstracts/variables";
+@import "abstracts/breakpoints";
+
+.gradienttext{
+    background: linear-gradient(29.44deg, #8057c5 7.23%, #ff635e 91.35%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}

@@ -14,7 +14,8 @@ function nextStep(){
 const HowItWorksData: HowItWorkksProps[] = [
   {
     stepNumber: nextStep(),
-    title: "Create your account",
+    title: "Create",
+    styledTitle:"your account",
     description:
       "Download the ReturnQueen app from the App Store or Google Play. Sign up and choose from our pay-per-pickup or unlimited pickup plans.",
     imgPath: "/images/how-it-works/step1.png",
@@ -22,7 +23,8 @@ const HowItWorksData: HowItWorkksProps[] = [
   },
   {
     stepNumber: nextStep(),
-    title: "Add your purchases",
+    title: "Add",
+    styledTitle:"your purchases",
     description:
       "Link your Gmail account to view all your recent purchases automatically. You can also add your purchases manually by entering your order details.",
     imgPath: "/images/how-it-works/step2.png",
@@ -30,7 +32,8 @@ const HowItWorksData: HowItWorkksProps[] = [
   },
   {
     stepNumber: nextStep(),
-    title: "Select your items",
+    title: "Select",
+    styledTitle:"your items",
     description:
       "Once you've chosen which items to return, our app will help you retrieve your shipping labels.",
     imgPath: "/images/how-it-works/step2.png",
@@ -38,7 +41,8 @@ const HowItWorksData: HowItWorkksProps[] = [
   },
   {
     stepNumber: nextStep(),
-    title: "Schedule your pickup",
+    title: "Schedule",
+    styledTitle:"your pickup",
     description:
       "Let us know where you'll be leaving your items and when you want us to pick them up.",
     imgPath: "/images/how-it-works/step4.png",
@@ -46,7 +50,8 @@ const HowItWorksData: HowItWorkksProps[] = [
   },
   {
     stepNumber: nextStep(),
-    title: "Leave the rest to us",
+    title: "Leave the rest",
+    styledTitle:"to us",
     description:
       "Our purple trucks will collect your items at your scheduled pickup time. Just sit back and watch your refunds roll in!",
     imgPath: "/images/how-it-works/step4.png",
@@ -65,11 +70,12 @@ export default function Home() {
             Returning the new way is as easy as it sounds.
           </h2>
           {HowItWorksData.map(
-            ({ stepNumber, title, description, imgPath, layout }, idx) => (
+            ({ stepNumber, title, styledTitle, description, imgPath, layout }, idx) => (
               <HowItWorks
                 key={idx}
                 stepNumber={stepNumber}
                 title={title}
+                styledTitle={styledTitle}
                 description={description}
                 imgPath={imgPath}
                 layout={layout}
