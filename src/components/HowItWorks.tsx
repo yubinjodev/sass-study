@@ -1,6 +1,6 @@
 import "styles/components/_howitworks.scss";
 import "styles/components/_buttons.scss";
-import "styles/abstracts/_typography.scss";
+import "styles/base/_typography.scss";
 
 type Layout = "type1" | "type2";
 

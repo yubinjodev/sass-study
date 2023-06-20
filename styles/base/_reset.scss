@@ -1,0 +1,42 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    // border:1px solid red;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after
+   {
+    box-sizing: inherit;
+  }
+  
+  body,h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+  }
+  
+  ul {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  li{
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  
+  a:link {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+  }
+  
+  a:visited {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: pointer;
+  }
+  

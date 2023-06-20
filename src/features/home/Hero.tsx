@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { faApple, faGooglePlay } from "@fortawesome/free-brands-svg-icons";
+
 import DownloadButton from "@/components/DownloadButton";
 import ProductHuntButton from "@/components/ProductHuntButton";
 

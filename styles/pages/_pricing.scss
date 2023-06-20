@@ -1,0 +1,64 @@
+@import "abstracts/variables";
+@import "abstracts/breakpoints";
+
+.tag{
+    color: $white;
+    font-weight: 700;
+    padding: 16px 32px;
+    background: linear-gradient(54.27deg,#8057c5 40.61%,#ff635e 78.72%);
+    width: fit-content;
+    border-radius: 12px 12px 0 0;
+    position: absolute;
+    top:-50px;
+    right:16px;
+    // z-index: -1;
+}
+
+.pricing {
+  margin: auto;
+
+  > * {
+    margin-bottom: 40px;
+  }
+
+  &__cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    &__title {
+      font-size: 2rem;
+      font-weight: 700;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      text-align: center;
+    }
+
+    &__nofreetrial {
+      border: 1px solid $primary;
+      border-radius: 24px;
+      background: $white;
+      height: fit-content;
+    }
+
+    &__freetrial {
+      border-radius: 24px;
+      border: 3px double transparent;
+      background-image: linear-gradient(#fff, #fff),
+        linear-gradient(54.27deg, #8057c5 40.61%, #ff635e 78.72%);
+      background-origin: border-box;
+      background-clip: content-box, border-box;
+
+      display: flex;
+      flex-direction: column;
+      height: fit-content;
+      position: relative;
+    }
+
+    &__container{
+        display: flex;
+        flex-direction: row;
+    }
+  }
+}
