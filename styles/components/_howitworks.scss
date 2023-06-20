@@ -7,10 +7,20 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    background: $grey-light;
+
+    @include breakpoint(xs){
+        padding: 160px 24px 24px 24px;
+    }
 
     &__title{
         color:$dark-purple;
         font-size: 4rem;
+        text-align: center;
+
+        @include breakpoint(xs){
+            font-size: 3rem;
+        }
     }
 
     &__subtitle{
@@ -19,6 +29,11 @@
         font-weight: 500;
         margin-top: 16px;
         margin-bottom: 80px;
+        text-align: center;
+
+        @include breakpoint(xs){
+            font-size: 1rem;
+        }
     }
 
     &__type1{
@@ -33,12 +48,22 @@
         margin-bottom: 160px;
     }
 
+    &__type1, &__type2{
+        @include breakpoint(xs){
+            flex-direction: column;
+        }
+    }
+
     &__text{
         padding:40px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+
+        @include breakpoint(xs){
+            padding:0;
+        }
 
         >*{
             margin-bottom: 24px;
@@ -47,6 +72,10 @@
         &__title{
             color: $dark-purple;
             font-size: 3rem;
+
+            @include breakpoint(xs){
+                font-size: 2rem;
+            }
         }
 
         &__description{

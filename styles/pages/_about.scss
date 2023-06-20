@@ -11,6 +11,7 @@
   flex-direction: column;
   font-size: 1.25rem;
   line-height: 40px;
+  background: $grey-light;
 
   @include breakpoint(md) {
     padding-left: 24px;
