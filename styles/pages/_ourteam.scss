@@ -1,0 +1,66 @@
+@import "abstracts/variables";
+@import "abstracts/breakpoints";
+
+.ourteam {
+  height: fit-content;
+  width: 100%;
+  padding: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $grey-light;
+
+  @include breakpoint(xs) {
+    padding: 24px;
+  }
+  @include breakpoint(sm) {
+    padding: 24px;
+  }
+  @include breakpoint(md) {
+    padding: 24px;
+  }
+
+  > * {
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+  }
+
+  &__subtitle {
+    color: $dark-purple;
+    font-size: 4rem;
+    text-align: center;
+
+    @include breakpoint(xs) {
+      font-size: 2rem;
+    }
+    @include breakpoint(sm) {
+      font-size: 2rem;
+    }
+    @include breakpoint(md) {
+      font-size: 2rem;
+    }
+  }
+
+  &__profile {
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 160px;
+    padding-right: 160px;
+
+    @include breakpoint(xs) {
+      padding: 0;
+    }
+    @include breakpoint(sm) {
+      padding: 0;
+    }
+    @include breakpoint(md) {
+      padding: 0;
+    }
+  }
+}
