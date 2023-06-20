@@ -1,4 +1,4 @@
-import "../../../styles/pages/_ad.scss";
+import "styles/pages/_ad.scss";
 
 
 export default function Ad() {

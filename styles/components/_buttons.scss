@@ -1,25 +1,38 @@
-@import 'abstracts/breakpoints';
+@import "abstracts/variables";
+@import "abstracts/breakpoints";
 
-.producthuntbutton{
-    height: 60px;
-    width: fit-content;
-    background: #fff;
-    color: darksalmon;
-    border:2px solid darksalmon;
-    display:flex;
-    flex-direction: row;
-    border-radius: 16px;
-    padding:8px;
-    align-items: center;
-    margin-left: 8px;
-    margin-right: 8px;
-    cursor:pointer;
-    font-weight: 700;
+.titlebutton {
+  background: $light-purple;
+  color: $primary;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 16px 24px;
+  border-radius: 40px;
+  text-align: center;
+  margin-bottom: 24px;
+  width: fit-content;
+}
 
-    #icon{
-        height: 24px;
+.producthuntbutton {
+  height: 60px;
+  width: fit-content;
+  background: #fff;
+  color: darksalmon;
+  border: 2px solid darksalmon;
+  display: flex;
+  flex-direction: row;
+  border-radius: 16px;
+  padding: 8px;
+  align-items: center;
+  margin-left: 8px;
+  margin-right: 8px;
+  cursor: pointer;
+  font-weight: 700;
+
+  #icon {
+    height: 24px;
     margin-right: 8px;
-    }
+  }
 }
 
 .downloadbutton {
@@ -27,18 +40,17 @@
   width: 200px;
   background: #000;
   color: #fff;
-  display:flex;
+  display: flex;
   flex-direction: row;
   border-radius: 16px;
-  padding:8px;
+  padding: 8px;
   align-items: center;
   margin-left: 8px;
   margin-right: 8px;
-  cursor:pointer;
-  @include breakpoint(xs){
+  cursor: pointer;
+  @include breakpoint(xs) {
     margin-bottom: 8px;
   }
-  
 
   #icon {
     height: 24px;

@@ -1,6 +1,6 @@
 "use client";
 
-import "../../styles/components/_buttons.scss";
+import "styles/components/_buttons.scss";
 
 type Props = {
   icon: React.ReactNode;

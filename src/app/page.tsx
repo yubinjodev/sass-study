@@ -1,4 +1,4 @@
-import "../../styles/global.scss";
+import "styles/global.scss";
 
 import Hero from "@/features/home/Hero";
 import Intro from "@/features/home/Intro";

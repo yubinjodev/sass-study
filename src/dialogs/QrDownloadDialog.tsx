@@ -1,4 +1,4 @@
-import "../../styles/components/_dialog.scss";
+import "styles/components/_dialog.scss";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose } from "@fortawesome/free-solid-svg-icons";

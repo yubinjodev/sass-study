@@ -1,0 +1,64 @@
+@import "abstracts/variables";
+@import "abstracts/breakpoints";
+
+.howitworks{
+    padding: 240px 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    &__title{
+        color:$dark-purple;
+        font-size: 4rem;
+    }
+
+    &__subtitle{
+        color:$text-light;
+        font-size: 2rem;
+        font-weight: 500;
+        margin-top: 16px;
+        margin-bottom: 80px;
+    }
+
+    &__type1{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 160px;
+    }
+
+    &__type2{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-bottom: 160px;
+    }
+
+    &__text{
+        padding:40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        >*{
+            margin-bottom: 24px;
+        }
+
+        &__title{
+            color: $dark-purple;
+            font-size: 3rem;
+        }
+
+        &__description{
+            font-size: 1.25rem;
+        }
+    }
+
+    &__image{
+        width: 100%;
+
+        img{
+            width: 100%;
+        }
+    }
+}

@@ -1,4 +1,4 @@
-import "../../../styles/pages/_animatedad.scss";
+import "styles/pages/_animatedad.scss";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinesLeaning } from "@fortawesome/free-solid-svg-icons";

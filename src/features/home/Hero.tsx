@@ -1,4 +1,4 @@
-import "../../../styles/pages/_hero.scss";
+import "styles/pages/_hero.scss";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 

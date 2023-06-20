@@ -1,4 +1,4 @@
-import "../../../styles/pages/_about.scss";
+import "styles/pages/_about.scss";
 
 export default function About() {
   return <section className="about">

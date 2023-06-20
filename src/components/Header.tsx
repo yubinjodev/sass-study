@@ -1,6 +1,6 @@
 "use client";
 
-import "../../styles/pages/_header.scss";
+import "styles/pages/_header.scss";
 
 import { useState } from "react";
 

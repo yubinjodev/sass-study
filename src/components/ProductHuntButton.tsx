@@ -1,6 +1,6 @@
 "use client"
 
-import '../../styles/components/_buttons.scss'
+import 'styles/components/_buttons.scss'
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMedal } from "@fortawesome/free-solid-svg-icons";

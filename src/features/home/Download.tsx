@@ -1,4 +1,4 @@
-import "../../../styles/pages/_download.scss"
+import "styles/pages/_download.scss"
 
 import DownloadButton from "@/components/DownloadButton"
 
