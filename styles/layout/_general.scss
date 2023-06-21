@@ -9,4 +9,17 @@
   flex-direction: column;
   align-items: center;
   background: $grey-light;
+
+  @include breakpoint(xs){
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  @include breakpoint(sm){
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  @include breakpoint(md){
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }

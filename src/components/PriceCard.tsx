@@ -17,6 +17,11 @@ export default function PriceCard(props: PriceCardProps) {
 
   return (
     <div className="pricecard">
+      {price === 99 && (
+        <div className="pricecard__star">
+          <img alt="" src="/images/pricing/star.png"/>
+        </div>
+      )}
       <div className="pricecard__title">${price}</div>
       <div className="pricecard__subtitle">per {per}</div>
 

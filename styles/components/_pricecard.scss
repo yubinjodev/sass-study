@@ -1,45 +1,62 @@
 @import "abstracts/variables";
 @import "abstracts/breakpoints";
 
-.excluded{
-    color:$text-extra-light;
+.excluded {
+  color: $text-extra-light;
 }
 
-.pricecard{
-    background: $white;
-    border-radius:24px;
-    padding:24px 40px;
+.pricecard {
+  background: $white;
+  border-radius: 24px;
+  padding: 24px 40px;
+  position: relative;
 
-    &__title{
-        font-size: 6rem;
-        font-weight: 900;
-        color: $dark-purple;
+  &__star {
+    position: absolute;
+    top: -40px;
+    right: 8px;
+    height: 160px;
+
+    @include breakpoint(xs) {
+      height: 100px;
+      top: -24px;
     }
 
-    &__subtitle{
-        color: $medium-purple;
+    img {
+      height: 100%;
     }
+  }
 
-    &__divider{
-        border: 1px solid $grey-medium;
+  &__title {
+    font-size: 6rem;
+    font-weight: 900;
+    color: $dark-purple;
+  }
+
+  &__subtitle {
+    color: $medium-purple;
+  }
+
+  &__divider {
+    border: 1px solid $grey-medium;
+  }
+
+  &__list {
+    &__item {
+      .icon {
+        height: 24px;
+        width: 24px;
+        padding: 4px;
+        color: $primary;
+        background: $light-purple;
+        border-radius: 50%;
+        margin-right: 16px;
+      }
+
+      .na {
+        color: red;
+        background: rgb(255, 219, 219);
+      }
     }
-
-    &__list{
-        &__item{
-            .icon{
-                height: 24px;
-                width: 24px;
-                padding:4px;
-                color:$primary;
-                background: $light-purple;     
-                border-radius: 50%;
-                margin-right: 16px;           
-            }
-
-            .na{
-                color:red;
-                background: rgb(255, 219, 219);  
-            }
-        }
-    }
+  }
 }

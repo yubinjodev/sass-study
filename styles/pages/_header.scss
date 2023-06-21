@@ -14,6 +14,7 @@
   left: 0;
   background: $white;
   z-index: 999;
+  
 
   @include breakpoint(xs) {
     justify-content: center;
