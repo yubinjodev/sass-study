@@ -1,0 +1,55 @@
+@import "abstracts/variables";
+@import "abstracts/breakpoints";
+
+.icon {
+  height: 16px;
+  margin-right: 2px;
+}
+
+.blogarticle {
+  position: relative;
+  width: 100%;
+
+  &__image {
+    height: 100%;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @include breakpoint(xs) {
+      display: none;
+    }
+    @include breakpoint(sm) {
+      display: none;
+    }
+  }
+
+  &__details {
+    padding: 40px;
+    padding-top: 0;
+
+    > * {
+      margin-bottom: 16px;
+    }
+
+    &__title {
+      font-size: 2rem;
+    }
+
+    &__detail {
+      color: $text-extra-light;
+    }
+  }
+
+  &__category {
+    color: $text-extra-light;
+    margin-right: 16px;
+    font-weight: 700;
+  }
+
+  &__featured {
+    color: $primary;
+    font-weight: 700;
+  }
+}

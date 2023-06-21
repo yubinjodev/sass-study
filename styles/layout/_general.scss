@@ -5,21 +5,47 @@
   height: fit-content;
   width: 100%;
   padding: 160px;
+  padding-bottom: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: $grey-light;
 
-  @include breakpoint(xs){
+  @include breakpoint(xs) {
     padding-left: 24px;
     padding-right: 24px;
   }
-  @include breakpoint(sm){
+  @include breakpoint(sm) {
     padding-left: 40px;
     padding-right: 40px;
   }
-  @include breakpoint(md){
+  @include breakpoint(md) {
     padding-left: 40px;
     padding-right: 40px;
   }
+}
+
+.flexrow {
+  display: flex;
+  flex-direction: row;
+
+  @include breakpoint(xs) {
+    flex-direction: column;
+  }
+  @include breakpoint(sm) {
+    flex-direction: column;
+  }
+}
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.componentspacing {
+  margin-bottom: 80px;
+}
+
+.flexrowplain{
+  display: flex;
+  flex-direction: row;
 }
