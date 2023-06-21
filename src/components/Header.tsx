@@ -11,6 +11,7 @@ import QrDownloadDialog, {
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import HamburgerMenu from "./HamburgerMenu";
 
 type DialogId = "QrDownloadDialog";
 
@@ -67,7 +68,7 @@ export default function Header() {
         </div>
 
         <div className="header__menu">
-          <FontAwesomeIcon icon={faBars} style={{height:32, color: "grey", cursor:"pointer"}}/>
+          <HamburgerMenu/>
         </div>
       </header>
 
