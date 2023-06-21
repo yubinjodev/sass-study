@@ -1,6 +1,7 @@
 @import "abstracts/variables";
 @import "abstracts/breakpoints";
 
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -17,7 +18,9 @@
   
 
   @include breakpoint(xs) {
-    justify-content: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    
   }
   @include breakpoint(sm) {
     padding: 24px;
@@ -53,8 +56,21 @@
     }
   }
 
+  &__menu{
+    display: none;
+    @include breakpoint(xs) {
+      display: block;
+    }
+    @include breakpoint(sm) {
+      display: block;
+    }
+  }
+
   &__download {
     @include breakpoint(xs) {
+      display: none;
+    }
+    @include breakpoint(sm) {
       display: none;
     }
     button {

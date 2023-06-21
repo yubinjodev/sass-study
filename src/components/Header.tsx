@@ -8,6 +8,10 @@ import QrDownloadDialog, {
   QrDownloadDialogProps,
 } from "@/dialogs/QrDownloadDialog";
 
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+
 type DialogId = "QrDownloadDialog";
 
 export default function Header() {
@@ -40,6 +44,7 @@ export default function Header() {
             <img alt="" src="images/header/logo.png" />
           </a>
         </div>
+
         <nav className="header__controls">
           <ul>
             <li>
@@ -59,6 +64,10 @@ export default function Header() {
 
         <div className="header__download">
           <button onClick={handleClickDownload}>Download App</button>
+        </div>
+
+        <div className="header__menu">
+          <FontAwesomeIcon icon={faBars} style={{height:32, color: "grey", cursor:"pointer"}}/>
         </div>
       </header>
 
