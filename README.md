@@ -1,34 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SASS Study (ReturnQueen Clone)
 
-## Getting Started
+This project is a clone of a website built using React, Next.js, SCSS, and Typescript. The purpose of this project is to showcase my skills in frontend web development and demonstrate my ability to recreate an existing website.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [Features](#feature)
+4. [Technologies](#technologies)
+5. [Contributing](#contributing)
+6. [License](#license)
+
+## Installation
+
+To run this project locally, please follow these steps:
+
+1. Clone the repository
+
+```
+git clone https://github.com/yubinjodev/sass-study.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Navigate to the project directory
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+cd website-clone
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Install the dependencies
 
-## Learn More
+```
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Once the installation is complete, you can start the development server by running the following command:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+npm run dev
+```
 
-## Deploy on Vercel
+This will start the application at http://localhost:3000 in your browser. Any changes you make to the source code will automatically refresh the page.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    Clone of the original website with similar design and functionality.
+    Responsive layout that adapts to different screen sizes.
+    Interactive components and user-friendly interface.
+
+## Technologies
+
+This project utilizes the following technologies:
+
+    React: A JavaScript library for building user interfaces.
+    Next.js: A React framework for server-side rendering and static site generation.
+    SCSS: A CSS preprocessor that enables the use of variables, mixins, and other advanced features.
+    Typescript: A statically typed superset of JavaScript that enhances code maintainability and scalability.
+
+## Contributing
+
+Contributions to this project are welcome. If you find any issues or have suggestions for improvements, feel free to open a new issue or submit a pull request.
+
+When contributing, please adhere to the existing code style and follow the GitHub Flow for collaboration.
+
+## License
+
+This project is licensed under the MIT License. You are free to use, modify, and distribute this code as long as the original license terms are included.
