@@ -42,7 +42,7 @@ export default function SignInDialog(props: SignInDialogProps) {
       </form>
 
       <p>
-        Already a member? <span className="link" onClick={signUpDialogOpen}>Sign In</span>
+        Don&apos;t have an account? <span className="link" onClick={signUpDialogOpen}>Sign Up</span>
       </p>
     </div>
   </dialog>
