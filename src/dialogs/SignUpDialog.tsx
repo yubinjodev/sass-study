@@ -4,10 +4,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export type SignUpDialogProps = {
   open: boolean;
   close: () => void;
+  signInDialogOpen: () => void;
 };
 
 export default function SignUpDialog(props: SignUpDialogProps) {
-  const { open, close } = props;
+  const { open, close, signInDialogOpen } = props;
 
   return (
     <dialog open={open} className="signupdialog qrdownloaddialog">
@@ -18,10 +19,14 @@ export default function SignUpDialog(props: SignUpDialogProps) {
             display: "flex",
             alignItems: "center",
             flexDirection: "column",
-            fontWeight:700
+            fontWeight: 700,
           }}
         >
-          <img alt="" src="/images/logo.png" style={{ width: 56, marginTop:40,marginBottom:24 }} />
+          <img
+            alt=""
+            src="/images/logo.png"
+            style={{ width: 56, marginTop: 40, marginBottom: 24 }}
+          />
           <p style={{ textAlign: "center" }}>
             ReturnQueen - return your online purchases with ease
           </p>
@@ -47,7 +52,10 @@ export default function SignUpDialog(props: SignUpDialogProps) {
         </form>
 
         <p>
-          Already a member? <span className="link">Sign In</span>
+          Already a member?{" "}
+          <span className="link" onClick={signInDialogOpen}>
+            Sign In
+          </span>
         </p>
       </div>
     </dialog>

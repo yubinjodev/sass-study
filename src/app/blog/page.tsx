@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import "styles/global.scss";
 
@@ -9,30 +9,48 @@ import Blog from "@/features/blog/Blog";
 import SubscribeButton from "@/components/SubscribeButton";
 import { useState } from "react";
 import SignUpDialog, { SignUpDialogProps } from "@/dialogs/SignUpDialog";
+import SignInDialog, { SignInDialogProps } from "@/dialogs/SignInDialog";
 
-type DialogId = "SignUpDialog" 
+type DialogId = "SignUpDialog" | "SignInDialog";
 
 export default function Home() {
-  const [dialogId, setDialogId] = useState<DialogId>()
-  const [SignUpDialogProps, setSignUpDialogProps] = useState<SignUpDialogProps>()
+  const [dialogId, setDialogId] = useState<DialogId>();
+  const [SignUpDialogProps, setSignUpDialogProps] =
+    useState<SignUpDialogProps>();
+  const [SignInDialogProps, setSignInDialogProps] =
+    useState<SignInDialogProps>();
 
-  const closeDialog = ()=>{
-    setDialogId(undefined)
-    setSignUpDialogProps(undefined)
-  }
+  const openSignInDialog = () => {
+    setDialogId("SignInDialog");
+    setSignInDialogProps({
+      open: true,
+      close: closeDialog,
+      signUpDialogOpen: handleClickSubscribe
+    });
+  };
 
-  const openDialog=()=>{
-    setDialogId("SignUpDialog")
+  const handleClickSignInDialog = () => {
+    openSignInDialog();
+  };
+
+  const closeDialog = () => {
+    setDialogId(undefined);
+    setSignUpDialogProps(undefined);
+  };
+
+  const openSignUpDialog = () => {
+    setDialogId("SignUpDialog");
     setSignUpDialogProps({
       open: true,
       close: closeDialog,
+      signInDialogOpen: handleClickSignInDialog
     });
-  }
+  };
 
-  const handleClickSubscribe=()=>{
-    openDialog();
-  }
-  
+  const handleClickSubscribe = () => {
+    openSignUpDialog();
+  };
+
   return (
     <div className="relative">
       <Header />
@@ -40,10 +58,14 @@ export default function Home() {
         <Blog />
       </main>
       <Footer />
-      <SubscribeButton onClick={handleClickSubscribe}/>
+      <SubscribeButton onClick={handleClickSubscribe} />
 
       {dialogId === "SignUpDialog" && SignUpDialogProps && (
-        <SignUpDialog  {...SignUpDialogProps}/>
+        <SignUpDialog {...SignUpDialogProps} />
+      )}
+
+      {dialogId === "SignInDialog" && SignInDialogProps && (
+        <SignInDialog {...SignInDialogProps} />
       )}
     </div>
   );
