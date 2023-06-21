@@ -1,8 +1,12 @@
+"use client"
+
 import "styles/layout/_general.scss";
 import "styles/base/_typography.scss";
 import "styles/pages/_pricing.scss";
 
 import PriceCard, { PriceCardProps } from "@/components/PriceCard";
+import { useState } from "react";
+import QrDownloadDialog, { QrDownloadDialogProps } from "@/dialogs/QrDownloadDialog";
 
 const benefits = {
   policy: "Return any item, from any store",
@@ -40,8 +44,31 @@ const PricingData: PriceCardProps[] = [
   },
 ];
 
+type DialogId = "QrDownloadDialog";
+
 export default function Pricing() {
+  const [dialogId, setDialogId] = useState<DialogId>();
+  const [qrDownloadDialogProps, setQrDownloagDialogProps] =
+    useState<QrDownloadDialogProps>();
+
+  const closeDialog = () => {
+    setDialogId(undefined);
+    setQrDownloagDialogProps(undefined);
+  };
+
+  const openDownloadDialog = () => {
+    setDialogId("QrDownloadDialog");
+    setQrDownloagDialogProps({
+      open: true,
+      close: closeDialog,
+    });
+  };
+
+  const handleClickDownload = () => {
+    openDownloadDialog();
+  };
   return (
+    <>
     <section className="pricing general">
       <h1 className="title">Pricing</h1>
       <h2 className="subtitle">Cancel or change your plan anytime</h2>
@@ -89,7 +116,11 @@ export default function Pricing() {
         </div>
       </div>
 
-      <button className="downloadbuttonmain">Download App</button>
+      <button className="downloadbuttonmain" onClick={handleClickDownload}>Download App</button>
     </section>
+    {dialogId === "QrDownloadDialog" && qrDownloadDialogProps && (
+        <QrDownloadDialog {...qrDownloadDialogProps} />
+      )}
+    </>
   );
 }
