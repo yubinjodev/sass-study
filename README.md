@@ -45,18 +45,18 @@ This will start the application at http://localhost:3000 in your browser. Any ch
 
 ## Features
 
-    Clone of the original website with similar design and functionality.
-    Responsive layout that adapts to different screen sizes.
-    Interactive components and user-friendly interface.
+- Clone of the **[original website (ReturnQueen)](https://returnqueen.com/)** with similar design and functionality.
+- Responsive layout that adapts to different screen sizes.
+- Interactive components and user-friendly interface.
 
 ## Technologies
 
 This project utilizes the following technologies:
 
-    React: A JavaScript library for building user interfaces.
-    Next.js: A React framework for server-side rendering and static site generation.
-    SCSS: A CSS preprocessor that enables the use of variables, mixins, and other advanced features.
-    Typescript: A statically typed superset of JavaScript that enhances code maintainability and scalability.
+- React: A JavaScript library for building user interfaces.
+- Next.js: A React framework for server-side rendering and static site generation.
+- SCSS: A CSS preprocessor that enables the use of variables, mixins, and other advanced features.
+- Typescript: A statically typed superset of JavaScript that enhances code maintainability and scalability.
 
 ## Contributing
 
