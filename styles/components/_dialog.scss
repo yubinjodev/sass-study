@@ -18,6 +18,10 @@
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 0px 100vw;
   z-index: 3;
 
+  @include breakpoint(xs) {
+    width: 320px;
+  }
+
   &__top {
     display: flex;
     flex-direction: row;
@@ -63,6 +67,10 @@
       font-size: 3rem;
       font-weight: 700;
       color: $dark-purple;
+
+      @include breakpoint(xs){
+        font-size: 2rem;
+      }
     }
   }
 }
