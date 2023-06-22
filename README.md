@@ -2,7 +2,7 @@
 
 ![til](public/returnqueen.gif)
 
-This project is a clone of a website built using React, Next.js, SCSS, and Typescript. The purpose of this project is to showcase my skills in frontend web development and demonstrate my ability to recreate an existing website.
+This project is a clone of **[ReturnQueen](https://returnqueen.com/)** built using React, Next.js, SCSS, and Typescript. The purpose of this project is to showcase my skills in frontend web development and demonstrate my ability to recreate an existing website.
 
 ## Table of Contents
 
@@ -26,7 +26,7 @@ git clone https://github.com/yubinjodev/sass-study.git
 2. Navigate to the project directory
 
 ```
-cd website-clone
+cd sass-study
 ```
 
 3. Install the dependencies
