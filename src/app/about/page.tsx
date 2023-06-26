@@ -9,14 +9,10 @@ import OurTeam from "@/features/about/OurTeam";
 
 export default function Home() {
   return (
-    <>
-      <Header />
       <main>
         <About/>
         <OurTeam/>
         <Download/>
       </main>
-      <Footer />
-    </>
   );
 }

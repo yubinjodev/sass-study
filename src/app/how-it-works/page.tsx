@@ -61,8 +61,6 @@ const HowItWorksData: HowItWorkksProps[] = [
 
 export default function Home() {
   return (
-    <>
-      <Header />
       <main>
         <section className="howitworks">
           <h1 className="howitworks__title">How it works</h1>
@@ -85,7 +83,5 @@ export default function Home() {
         </section>
         <Download />
       </main>
-      <Footer />
-    </>
   );
 }

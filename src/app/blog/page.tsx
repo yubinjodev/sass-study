@@ -53,11 +53,9 @@ export default function Home() {
 
   return (
     <div className="relative">
-      <Header />
       <main>
         <Blog />
       </main>
-      <Footer />
       <SubscribeButton onClick={handleClickSubscribe} />
 
       {dialogId === "SignUpDialog" && SignUpDialogProps && (

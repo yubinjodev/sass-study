@@ -14,8 +14,6 @@ import Header from "@/components/Header";
 
 export default function Home() {
   return (
-    <>
-      <Header />
       <main>
         <Hero />
         <Intro />
@@ -25,7 +23,5 @@ export default function Home() {
         <Testimonials />
         <Download />
       </main>
-      <Footer />
-    </>
   );
 }

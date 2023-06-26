@@ -7,13 +7,9 @@ import Pricing from "@/features/pricing/Pricing";
 
 export default function Home() {
   return (
-    <>
-      <Header />
       <main>
         <Pricing/>
         <Download/>
       </main>
-      <Footer />
-    </>
   );
 }
