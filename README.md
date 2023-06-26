@@ -55,10 +55,11 @@ This will start the application at http://localhost:3000 in your browser. Any ch
 
 This project utilizes the following technologies:
 
-- React: A JavaScript library for building user interfaces.
-- Next.js: A React framework for server-side rendering and static site generation.
-- SCSS: A CSS preprocessor that enables the use of variables, mixins, and other advanced features.
-- Typescript: A statically typed superset of JavaScript that enhances code maintainability and scalability.
+- Language : Typescript
+- JavaScript Framwork : React
+- React Framework : Next.js
+- CSS Preprocessor : SCSS
+- E2E Testing : Playwright
 
 ## Contributing
 
