@@ -21,12 +21,11 @@ export default function BlogArticle(props: BlogArticleProps) {
 
   return (
     <article className="blogarticle flexrow componentspacing">
-      <div className="blogarticle__image">
-        
-          <img alt="" src={imgPath} />
-      </div>
+      <figure className="blogarticle__image">
+        <img alt="" src={imgPath} />
+      </figure>
 
-      <div className="blogarticle__details">
+      <section className="blogarticle__details">
         <div className="flexrowplain">
           <span className="blogarticle__category">{category}</span>
           <span>
@@ -53,7 +52,7 @@ export default function BlogArticle(props: BlogArticleProps) {
             - {duration} min read
           </div>
         </div>
-      </div>
+      </section>
     </article>
   );
 }
