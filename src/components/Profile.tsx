@@ -20,20 +20,19 @@ export default function Profile(props: ProfielProps) {
   const { name, position, imgPath } = props;
 
   return (
-    <div className="profile">
+    <section className="profile">
       <img alt="" src={imgPath} />
       <p className="profile__name">{name}</p>
-
 
       {typeof position === "string" && (
         <p className="profile__position">{position}</p>
       )}
-      
+
       {typeof position !== "string" && (
         <p className="profile__position">
           {position[0]} and {position[1]}
         </p>
       )}
-    </div>
+    </section>
   );
 }

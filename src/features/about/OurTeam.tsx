@@ -48,7 +48,7 @@ const ProfileData: ProfielProps[] = [
 
 export default function OurTeam() {
   return (
-    <section className="ourteam">
+    <article className="ourteam">
       <h1 className="ourteam__title titlebutton">OUR TEAM</h1>
       <h2 className="ourteam__subtitle">Some of our key members</h2>
 
@@ -62,6 +62,6 @@ export default function OurTeam() {
           />
         ))}
       </div>
-    </section>
+    </article>
   );
 }
