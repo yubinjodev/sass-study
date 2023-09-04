@@ -77,9 +77,9 @@ export default function Pricing() {
 
         <div className="pricing__cards">
           <section className="pricing__cards__nofreetrial">
-            <div className="pricing__cards__title gradienttextpurple">
+            <h3 className="pricing__cards__title gradienttextpurple">
               Pay-Per-Pickup
-            </div>
+            </h3>
             {PricingData.map(
               ({ price, per, included, excluded, freetrial }, idx) =>
                 freetrial != true && (
@@ -97,9 +97,9 @@ export default function Pricing() {
 
           <section className="pricing__cards__freetrial">
             <div className="tag">Free 7-day trial</div>
-            <div className="pricing__cards__title gradienttextpurple">
+            <h3 className="pricing__cards__title gradienttextpurple">
               Unlimited Pickups
-            </div>
+            </h3>
             <div className="pricing__cards__container">
               {PricingData.map(
                 ({ price, per, included, excluded, freetrial }, idx) =>

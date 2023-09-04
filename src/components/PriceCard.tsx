@@ -19,10 +19,10 @@ export default function PriceCard(props: PriceCardProps) {
     <div className="pricecard">
       {price === 99 && (
         <div className="pricecard__star">
-          <img alt="" src="/images/pricing/star.png"/>
+          <img alt="" src="/images/pricing/star.png" />
         </div>
       )}
-      <div className="pricecard__title">${price}</div>
+      <h4 className="pricecard__title">${price}</h4>
       <div className="pricecard__subtitle">per {per}</div>
 
       <hr className="pricecard__divider" />
