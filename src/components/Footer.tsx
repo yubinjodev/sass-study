@@ -46,30 +46,32 @@ export default function Footer() {
         </ul>
       </div>
       <section className="footer__map">
-        <div className="footer__map__title">Company</div>
-        <ul className="footer__map__list">
-          <li>
-            <a href="/about">About</a>
-          </li>
-          <li>
-            <a href="/how-it-works">How it works</a>
-          </li>
-          <li>
-            <a href="/pricing">Pricing</a>
-          </li>
-          <li>
-            <a href="/service-areas">Service Areas</a>
-          </li>
-          <li>
-            <a href="/in-the-news">In the News</a>
-          </li>
-          <li>
-            <a href="/blog">Blog</a>
-          </li>
-        </ul>
+        <h1 className="footer__map__title">Company</h1>
+        <nav>
+          <ul className="footer__map__list">
+            <li>
+              <a href="/about">About</a>
+            </li>
+            <li>
+              <a href="/how-it-works">How it works</a>
+            </li>
+            <li>
+              <a href="/pricing">Pricing</a>
+            </li>
+            <li>
+              <a href="/service-areas">Service Areas</a>
+            </li>
+            <li>
+              <a href="/in-the-news">In the News</a>
+            </li>
+            <li>
+              <a href="/blog">Blog</a>
+            </li>
+          </ul>
+        </nav>
       </section>
       <section className="footer__support">
-        <div className="footer__support__title">Support</div>
+        <h1 className="footer__support__title">Support</h1>
         <ul className="footer__support__list">
           <li>FAQ</li>
           <li>
