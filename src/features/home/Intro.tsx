@@ -78,10 +78,10 @@ export default function Intro() {
       </article>
 
       <article className="intro__money">
-        <div className="intro__money__main">WHY USE RETURNQUEEN?</div>
-        <h1 className="intro__money__title">
+        <h1 className="intro__money__main">WHY USE RETURNQUEEN?</h1>
+        <h2 className="intro__money__title">
           Its the stress-free way to get your money back
-        </h1>
+        </h2>
 
         <section className="intro__money__blocks">
           <div className="intro__money__block">
@@ -89,8 +89,7 @@ export default function Intro() {
               <img alt="" src="/images/intro/nomore/package.png" />
             </div>
             <div className="intro__money__title">
-              <h3>No more</h3>
-              <p>packaging and printing</p>
+              <h3>No more packaging and printing</h3>
             </div>
             <div className="intro__money__text">
               <p>Your time is too precious. You can leave that up to us.</p>
@@ -101,8 +100,7 @@ export default function Intro() {
               <img alt="" src="/images/intro/nomore/post.png" />
             </div>
             <div className="intro__money__title">
-              <h3>No more</h3>
-              <p>post office trips</p>
+              <h3>No more post office trips</h3>
             </div>
             <div className="intro__money__text">
               <p>Its a nightmare! Every. Single. Time.</p>
@@ -113,8 +111,7 @@ export default function Intro() {
               <img alt="" src="/images/intro/nomore/refunds.png" />
             </div>
             <div className="intro__money__title">
-              <h3>No more</h3>
-              <p>missed refunds</p>
+              <h3>No more missed refunds</h3>
             </div>
             <div className="intro__money__text">
               <p>Get your money back in time - every time.</p>

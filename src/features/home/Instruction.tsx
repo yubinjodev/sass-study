@@ -3,20 +3,20 @@ import "styles/pages/_instruction.scss";
 export default function Instruction() {
   return (
     <article className="instruction">
-      <div className="instruction__main">HOW IT WORKS</div>
+      <h1 className="instruction__main">HOW IT WORKS</h1>
 
-      <div className="instruction__title">
+      <h2 className="instruction__title">
         Returning the new way is as easy as sounds
-      </div>
+      </h2>
 
       <section className="instruction__blocks">
         <div className="instruction__block">
           <div className="instruction__block__image">
             <img alt="" src="/images/instruction/return.png" />
           </div>
-          <div className="instruction__block__title">
+          <h3 className="instruction__block__title">
             Choose your items to return
-          </div>
+          </h3>
           <div className="instruction__block__text">
             Our app helps you find your shipping labels.
           </div>
@@ -25,7 +25,7 @@ export default function Instruction() {
           <div className="instruction__block__image">
             <img alt="" src="/images/instruction/schedule.png" />
           </div>
-          <div className="instruction__block__title">Schedule your pickup</div>
+          <h3 className="instruction__block__title">Schedule your pickup</h3>
           <div className="instruction__block__text">
             Let us know where and when to pick up your returns.
           </div>
@@ -34,7 +34,7 @@ export default function Instruction() {
           <div className="instruction__block__image">
             <img alt="" src="/images/instruction/leave.png" />
           </div>
-          <div className="instruction__block__title">Leave the rest to us</div>
+          <h3 className="instruction__block__title">Leave the rest to us</h3>
           <div className="instruction__block__text">
             Sit back and watch the funds roll in.
           </div>

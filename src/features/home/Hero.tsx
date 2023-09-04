@@ -15,9 +15,9 @@ export default function Hero() {
         <h1 className="hero__title">Returns picked up from your doorstep</h1>
 
         <div className="hero__subtitle">
-          <h3>No more packaging</h3>
-          <h3>No more printing</h3>
-          <h3>No more driving</h3>
+          <p>No more packaging</p>
+          <p>No more printing</p>
+          <p>No more driving</p>
         </div>
 
         {/* <div className="hero__zipcode">

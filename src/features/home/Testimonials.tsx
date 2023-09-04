@@ -47,10 +47,10 @@ const slides = [
 export default function Testimonials() {
   return (
     <article className="testimonals">
-      <div className="testimonals__title">HEAR FROM OUR USERS</div>
-      <div className="testimonals__quote">
+      <h1 className="testimonals__title">HEAR FROM OUR USERS</h1>
+      <h2 className="testimonals__quote">
         A total online shopping game changer
-      </div>
+      </h2>
 
       <Carousel
         className="testimonials__carousel"

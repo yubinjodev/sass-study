@@ -11,8 +11,8 @@ export default function AnimatedAd() {
       </div>
 
       <div className="animatedad__text">
-        <h1>Are you still</h1>
-        <h3>Printing shipping labels?</h3>
+        <div>Are you still</div>
+        <div>Printing shipping labels?</div>
       </div>
     </section>
   );

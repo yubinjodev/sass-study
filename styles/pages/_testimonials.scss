@@ -26,6 +26,7 @@
     &__quote{
         font-size: 4rem;
         color: $dark-purple;
+        font-weight: 500;
         
         @include breakpoint(xs) {
             font-size: 2rem;

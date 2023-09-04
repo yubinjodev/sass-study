@@ -5,13 +5,13 @@ export default function Ad() {
     <article className="ad">
       <hr />
       <section className="ad__block">
-        <div className="ad__block__title">
+        <h1 className="ad__block__title">
           ReturnQueen makes online returns a breeze
-        </div>
-        <div className="ad__block__text">
+        </h1>
+        <h2 className="ad__block__text">
           Say goodbye to sorting, taping, boxing, label printing, and endless
           post office trips.
-        </div>
+        </h2>
       </section>
       <hr />
     </article>
