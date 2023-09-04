@@ -1,11 +1,10 @@
 import "styles/pages/_ad.scss";
 
-
 export default function Ad() {
   return (
-    <section className="ad">
+    <article className="ad">
       <hr />
-      <div className="ad__block">
+      <section className="ad__block">
         <div className="ad__block__title">
           ReturnQueen makes online returns a breeze
         </div>
@@ -13,8 +12,8 @@ export default function Ad() {
           Say goodbye to sorting, taping, boxing, label printing, and endless
           post office trips.
         </div>
-      </div>
+      </section>
       <hr />
-    </section>
+    </article>
   );
 }

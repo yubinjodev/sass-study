@@ -2,14 +2,14 @@ import "styles/pages/_instruction.scss";
 
 export default function Instruction() {
   return (
-    <section className="instruction">
+    <article className="instruction">
       <div className="instruction__main">HOW IT WORKS</div>
 
       <div className="instruction__title">
         Returning the new way is as easy as sounds
       </div>
 
-      <div className="instruction__blocks">
+      <section className="instruction__blocks">
         <div className="instruction__block">
           <div className="instruction__block__image">
             <img alt="" src="/images/instruction/return.png" />
@@ -39,7 +39,7 @@ export default function Instruction() {
             Sit back and watch the funds roll in.
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </article>
   );
 }

@@ -46,13 +46,17 @@ const slides = [
 
 export default function Testimonials() {
   return (
-    <section className="testimonals">
+    <article className="testimonals">
       <div className="testimonals__title">HEAR FROM OUR USERS</div>
       <div className="testimonals__quote">
         A total online shopping game changer
       </div>
 
-      <Carousel className="testimonials__carousel" slides={slides} type="text" />
-    </section>
+      <Carousel
+        className="testimonials__carousel"
+        slides={slides}
+        type="text"
+      />
+    </article>
   );
 }

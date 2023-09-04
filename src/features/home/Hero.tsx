@@ -10,8 +10,8 @@ import ProductHuntButton from "@/components/ProductHuntButton";
 
 export default function Hero() {
   return (
-    <section className="hero">
-      <div className="hero__text">
+    <article className="hero">
+      <section className="hero__text">
         <h1 className="hero__title">Returns picked up from your doorstep</h1>
 
         <div className="hero__subtitle">
@@ -41,11 +41,11 @@ export default function Hero() {
         <div className="hero__producthunt">
           <ProductHuntButton />
         </div>
-      </div>
+      </section>
 
-      <div className="hero__image">
+      <figure className="hero__image">
         <img alt="" src="/images/hero/van.png" />
-      </div>
-    </section>
+      </figure>
+    </article>
   );
 }
