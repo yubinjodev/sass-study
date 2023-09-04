@@ -11,16 +11,19 @@ export default function About() {
           <h1 className="about__top__title">It all started with...</h1>
           <div className="about__topright__container">
             <div className="about__topright__box">
-              <p className="about__topright__number">2</p>
-              <p>Moms</p>
+              <h2 className="about__topright__number">
+                2 <span>Moms</span>
+              </h2>
             </div>
             <div className="about__topright__box">
-              <p className="about__topright__number">12</p>
-              <p>Collective Kids</p>
+              <h2 className="about__topright__number">
+                12 <span>Collective Kids</span>
+              </h2>
             </div>
             <div className="about__topright__box">
-              <p className="about__topright__number">Endless</p>
-              <p>Items to return</p>
+              <h2 className="about__topright__number">
+                Endless <span>Items to Return</span>
+              </h2>
             </div>
           </div>
         </section>
