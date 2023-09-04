@@ -32,7 +32,7 @@ const PricingData: PriceCardProps[] = [
   },
   {
     price: 99,
-    per: "pickup",
+    per: "year",
     included: [
       benefits.policy,
       benefits.schedule,
