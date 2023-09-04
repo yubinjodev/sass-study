@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import "styles/layout/_general.scss";
 import "styles/base/_typography.scss";
@@ -6,7 +6,9 @@ import "styles/pages/_pricing.scss";
 
 import PriceCard, { PriceCardProps } from "@/components/PriceCard";
 import { useState } from "react";
-import QrDownloadDialog, { QrDownloadDialogProps } from "@/dialogs/QrDownloadDialog";
+import QrDownloadDialog, {
+  QrDownloadDialogProps,
+} from "@/dialogs/QrDownloadDialog";
 
 const benefits = {
   policy: "Return any item, from any store",
@@ -69,39 +71,18 @@ export default function Pricing() {
   };
   return (
     <>
-    <section className="pricing general">
-      <h1 className="title">Pricing</h1>
-      <h2 className="subtitle">Cancel or change your plan anytime</h2>
+      <article className="pricing general">
+        <h1 className="title">Pricing</h1>
+        <h2 className="subtitle">Cancel or change your plan anytime</h2>
 
-      <div className="pricing__cards">
-        <div className="pricing__cards__nofreetrial">
-          <div className="pricing__cards__title gradienttextpurple">
-            Pay-Per-Pickup
-          </div>
-          {PricingData.map(
-            ({ price, per, included, excluded, freetrial }, idx) =>
-              freetrial != true && (
-                <PriceCard
-                  key={idx}
-                  price={price}
-                  per={per}
-                  included={included}
-                  excluded={excluded}
-                  freetrial={freetrial}
-                />
-              )
-          )}
-        </div>
-
-        <div className="pricing__cards__freetrial">
-          <div className="tag">Free 7-day trial</div>
-          <div className="pricing__cards__title gradienttextpurple">
-            Unlimited Pickups
-          </div>
-          <div className="pricing__cards__container">
+        <div className="pricing__cards">
+          <section className="pricing__cards__nofreetrial">
+            <div className="pricing__cards__title gradienttextpurple">
+              Pay-Per-Pickup
+            </div>
             {PricingData.map(
               ({ price, per, included, excluded, freetrial }, idx) =>
-                freetrial && (
+                freetrial != true && (
                   <PriceCard
                     key={idx}
                     price={price}
@@ -112,13 +93,36 @@ export default function Pricing() {
                   />
                 )
             )}
-          </div>
-        </div>
-      </div>
+          </section>
 
-      <button className="downloadbuttonmain" onClick={handleClickDownload}>Download App</button>
-    </section>
-    {dialogId === "QrDownloadDialog" && qrDownloadDialogProps && (
+          <section className="pricing__cards__freetrial">
+            <div className="tag">Free 7-day trial</div>
+            <div className="pricing__cards__title gradienttextpurple">
+              Unlimited Pickups
+            </div>
+            <div className="pricing__cards__container">
+              {PricingData.map(
+                ({ price, per, included, excluded, freetrial }, idx) =>
+                  freetrial && (
+                    <PriceCard
+                      key={idx}
+                      price={price}
+                      per={per}
+                      included={included}
+                      excluded={excluded}
+                      freetrial={freetrial}
+                    />
+                  )
+              )}
+            </div>
+          </section>
+        </div>
+
+        <button className="downloadbuttonmain" onClick={handleClickDownload}>
+          Download App
+        </button>
+      </article>
+      {dialogId === "QrDownloadDialog" && qrDownloadDialogProps && (
         <QrDownloadDialog {...qrDownloadDialogProps} />
       )}
     </>
