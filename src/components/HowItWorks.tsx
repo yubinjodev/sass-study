@@ -24,17 +24,19 @@ export default function HowItWorks(props: HowItWorkksProps) {
           layout === "type1" ? "howitworks__type1" : "howitworks__type2"
         }
       >
-        <div className="howitworks__text">
+        <section className="howitworks__text">
           <div className="howitworks__text__step titlebutton">
             STEP {stepNumber}
           </div>
-          <h3 className="howitworks__text__title">{title} <span className="gradienttext">{styledTitle}</span></h3>
+          <h3 className="howitworks__text__title">
+            {title} <span className="gradienttext">{styledTitle}</span>
+          </h3>
           <p className="howitworks__text__description">{description}</p>
-        </div>
+        </section>
 
-        <div className="howitworks__image">
+        <figure className="howitworks__image">
           <img alt="" src={imgPath} />
-        </div>
+        </figure>
       </div>
     </div>
   );
