@@ -23,7 +23,7 @@ export default function QrDownloadDialog(props: QrDownloadDialogProps) {
           onClick={handleClickCloseDialog}
           className="qrdownloaddialog__top__action"
         >
-          <FontAwesomeIcon id="icon" icon={faClose} />
+          <FontAwesomeIcon className="icon" icon={faClose} />
         </button>
       </div>
 

@@ -32,7 +32,7 @@ export default function SignUpDialog(props: SignUpDialogProps) {
           </p>
         </div>
         <button onClick={close} className="qrdownloaddialog__top__action">
-          <FontAwesomeIcon id="icon" icon={faClose} />
+          <FontAwesomeIcon className="icon" icon={faClose} />
         </button>
       </div>
 

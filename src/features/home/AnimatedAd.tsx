@@ -7,7 +7,7 @@ export default function AnimatedAd() {
   return (
     <section className="animatedad">
       <div className="animatedad__icon">
-        <FontAwesomeIcon id="icon" icon={faLinesLeaning} />
+        <FontAwesomeIcon className="icon" icon={faLinesLeaning} />
       </div>
 
       <div className="animatedad__text">

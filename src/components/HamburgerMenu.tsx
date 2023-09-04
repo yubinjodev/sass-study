@@ -11,7 +11,7 @@ export default function HamburgerMenu() {
       <a id="about" className="menu-item" href="/how-it-works">
         How it works
       </a>
-      <a id="contact" className="menu-item" href="/pricing">
+      <a id="pricing" className="menu-item" href="/pricing">
         Pricing
       </a>
       <a id="contact" className="menu-item" href="/blog">

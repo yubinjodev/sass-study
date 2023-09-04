@@ -5,7 +5,7 @@ import "styles/components/_buttons.scss";
 type Props = {
   icon: React.ReactNode;
   text: string;
-  apple?:boolean;
+  apple?: boolean;
 };
 
 export default function DownloadButton(props: Props) {
@@ -25,10 +25,9 @@ export default function DownloadButton(props: Props) {
     }
   };
 
-
   return (
     <div className="downloadbutton" onClick={handleClickDownload}>
-      <div id="icon">{icon}</div>
+      <div className="icon">{icon}</div>
       <div className="downloadbutton__text">{text}</div>
     </div>
   );

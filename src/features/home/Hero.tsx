@@ -21,7 +21,7 @@ export default function Hero() {
         </div>
 
         {/* <div className="hero__zipcode">
-          <FontAwesomeIcon id="icon" icon={faLocationDot} />
+          <FontAwesomeIcon className="icon" icon={faLocationDot} />
           <input placeholder="Enter your zip code" />
           <button>GO!</button>
         </div> */}
@@ -29,11 +29,11 @@ export default function Hero() {
         <div className="hero__download">
           <DownloadButton
             apple
-            icon={<FontAwesomeIcon id="icon" icon={faApple} />}
+            icon={<FontAwesomeIcon className="icon" icon={faApple} />}
             text="Download on the App Store"
           />
           <DownloadButton
-            icon={<FontAwesomeIcon id="icon" icon={faGooglePlay} />}
+            icon={<FontAwesomeIcon className="icon" icon={faGooglePlay} />}
             text="Get it on Google Play"
           />
         </div>
