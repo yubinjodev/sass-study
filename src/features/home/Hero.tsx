@@ -44,7 +44,7 @@ export default function Hero() {
       </section>
 
       <figure className="hero__image">
-        <img alt="" src="/images/hero/van.png" />
+        <img alt="van" src="/images/hero/van.png" />
       </figure>
     </article>
   );

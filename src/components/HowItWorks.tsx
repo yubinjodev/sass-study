@@ -35,7 +35,7 @@ export default function HowItWorks(props: HowItWorkksProps) {
         </section>
 
         <figure className="howitworks__image">
-          <img alt="" src={imgPath} />
+          <img alt="visual for instructions" src={imgPath} />
         </figure>
       </div>
     </div>

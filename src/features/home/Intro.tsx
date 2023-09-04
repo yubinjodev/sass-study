@@ -60,8 +60,11 @@ export default function Intro() {
         </section>
 
         <figure className="intro__persuade__image">
-          <img alt="" src="/images/intro/abstract.png" />
-          <img alt="" src="/images/intro/shopping.png" />
+          <img alt="shoes, bags, furniture" src="/images/intro/abstract.png" />
+          <img
+            alt="woman shopping on her phone"
+            src="/images/intro/shopping.png"
+          />
         </figure>
       </article>
 
@@ -86,7 +89,7 @@ export default function Intro() {
         <section className="intro__money__blocks">
           <div className="intro__money__block">
             <div className="intro__money__image">
-              <img alt="" src="/images/intro/nomore/package.png" />
+              <img alt="box" src="/images/intro/nomore/package.png" />
             </div>
             <div className="intro__money__title">
               <h3>No more packaging and printing</h3>
@@ -97,7 +100,7 @@ export default function Intro() {
           </div>
           <div className="intro__money__block">
             <div className="intro__money__image">
-              <img alt="" src="/images/intro/nomore/post.png" />
+              <img alt="mailbox" src="/images/intro/nomore/post.png" />
             </div>
             <div className="intro__money__title">
               <h3>No more post office trips</h3>
@@ -108,7 +111,7 @@ export default function Intro() {
           </div>
           <div className="intro__money__block">
             <div className="intro__money__image">
-              <img alt="" src="/images/intro/nomore/refunds.png" />
+              <img alt="coins" src="/images/intro/nomore/refunds.png" />
             </div>
             <div className="intro__money__title">
               <h3>No more missed refunds</h3>

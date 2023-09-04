@@ -12,7 +12,10 @@ export default function Instruction() {
       <section className="instruction__blocks">
         <div className="instruction__block">
           <div className="instruction__block__image">
-            <img alt="" src="/images/instruction/return.png" />
+            <img
+              alt="visual for description"
+              src="/images/instruction/return.png"
+            />
           </div>
           <h3 className="instruction__block__title">
             Choose your items to return
@@ -23,7 +26,10 @@ export default function Instruction() {
         </div>
         <div className="instruction__block">
           <div className="instruction__block__image">
-            <img alt="" src="/images/instruction/schedule.png" />
+            <img
+              alt="visual for description"
+              src="/images/instruction/schedule.png"
+            />
           </div>
           <h3 className="instruction__block__title">Schedule your pickup</h3>
           <div className="instruction__block__text">
@@ -32,7 +38,10 @@ export default function Instruction() {
         </div>
         <div className="instruction__block">
           <div className="instruction__block__image">
-            <img alt="" src="/images/instruction/leave.png" />
+            <img
+              alt="visual for description"
+              src="/images/instruction/leave.png"
+            />
           </div>
           <h3 className="instruction__block__title">Leave the rest to us</h3>
           <div className="instruction__block__text">

@@ -23,7 +23,7 @@ export default function SignUpDialog(props: SignUpDialogProps) {
           }}
         >
           <img
-            alt=""
+            alt="logo"
             src="/images/logo.png"
             style={{ width: 56, marginTop: 40, marginBottom: 24 }}
           />

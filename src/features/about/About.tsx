@@ -5,7 +5,7 @@ export default function About() {
     <article className="about">
       <div className="about__top">
         <figure className="about__top__left">
-          <img alt="" src="/images/about/founders.png" />
+          <img alt="the founders" src="/images/about/founders.png" />
         </figure>
         <section className="about__top__right">
           <h1 className="about__top__title">It all started with...</h1>

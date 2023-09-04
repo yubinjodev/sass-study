@@ -21,7 +21,7 @@ export default function Profile(props: ProfielProps) {
 
   return (
     <section className="profile">
-      <img alt="" src={imgPath} />
+      <img alt={name} src={imgPath} />
       <h3 className="profile__name">{name}</h3>
 
       {typeof position === "string" && (

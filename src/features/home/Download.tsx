@@ -12,7 +12,7 @@ export default function Download() {
       <div className="download__background">
         <div className="download__block">
           <figure className="download__block__image">
-            <img alt="" src="/images/download/phone.png" />
+            <img alt="iphone" src="/images/download/phone.png" />
           </figure>
           <section className="download__block__text">
             <h1>Download the ReturnQueen App</h1>
@@ -21,7 +21,7 @@ export default function Download() {
 
             <div className="download__block__divider">
               <div className="image">
-                <img alt="" src="/images/download/people.png" />
+                <img alt="people avatars" src="/images/download/people.png" />
               </div>
               <p>
                 Join our growing family of members who have found a better way

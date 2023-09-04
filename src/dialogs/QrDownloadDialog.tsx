@@ -29,10 +29,12 @@ export default function QrDownloadDialog(props: QrDownloadDialogProps) {
 
       <div className="qrdownloaddialog__content">
         <div className="qrdownloaddialog__content__qrcode">
-          <img alt="" src="/images/dialog/qrcode/qrcode.png"/>
+          <img alt="qr code" src="/images/dialog/qrcode/qrcode.png" />
         </div>
 
-        <p className="qrdownloaddialog__content__title">Download the ReturnQueen App</p>
+        <p className="qrdownloaddialog__content__title">
+          Download the ReturnQueen App
+        </p>
       </div>
     </dialog>
   );

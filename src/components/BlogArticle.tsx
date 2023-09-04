@@ -22,7 +22,7 @@ export default function BlogArticle(props: BlogArticleProps) {
   return (
     <article className="blogarticle flexrow componentspacing">
       <figure className="blogarticle__image">
-        <img alt="" src={imgPath} />
+        <img alt="article cover image" src={imgPath} />
       </figure>
 
       <section className="blogarticle__details">

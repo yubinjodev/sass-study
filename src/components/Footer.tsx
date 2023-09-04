@@ -14,7 +14,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer__main">
         <div className="footer__main__logo">
-          <img alt="" src="/images/header/logo.png" />
+          <img alt="footer logo" src="/images/header/logo.png" />
         </div>
         <div className="footer__main__title">
           You hate returns. We love them! We pick up right from your doorstep.

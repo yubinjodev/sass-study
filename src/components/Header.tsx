@@ -8,7 +8,6 @@ import QrDownloadDialog, {
   QrDownloadDialogProps,
 } from "@/dialogs/QrDownloadDialog";
 
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import HamburgerMenu from "./HamburgerMenu";
@@ -42,7 +41,7 @@ export default function Header() {
       <header className="header">
         <div className="header__logo">
           <a href="/">
-            <img alt="" src="images/header/logo.png" />
+            <img alt="header logo" src="images/header/logo.png" />
           </a>
         </div>
 
@@ -68,7 +67,7 @@ export default function Header() {
         </div>
 
         <div className="header__menu">
-          <HamburgerMenu/>
+          <HamburgerMenu />
         </div>
       </header>
 
